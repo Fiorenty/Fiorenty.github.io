@@ -1,0 +1,586 @@
+body {
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    /*16*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.navtitle{
+    font-size: 20px;
+}
+
+header {
+    border-bottom: #9e1072 3px solid;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: auto;
+}
+
+.footerimage {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown {
+    line-height: 0.2;
+}
+
+header li {
+    display: inline;
+    vertical-align: middle;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+article {
+    margin-top: 85px;
+    background-color: #ffffff;
+    line-height: 1.42857;
+}
+
+/*
+        <section>
+           <img src="img/Foto3.png" alt="Foto3">
+            <h2>Verhaal van de orchidee</h2>
+            <p>Als nieuweling in het regenwoud had de orchidee geen kans als ze op de bodem was gebleven. Klimmen in de bomen was niet een voor de hand liggende keuze. Er waren heel wat obstakels op de weg naar het licht. Maar de orchidee had twee bijzondere eigenschappen. Ze was flexibel, kon zich aanpassen, zag kansen waar anderen ze niet zagen.</p>
+            <a class="button" href="Verhaal-orchidee.html">Lees meer</a>
+        </section>
+        
+        <img class="mainimage" src="img/Foto5.png" alt="Foto5">
+        
+        <section>
+           <img src="img/Foto4.png" alt="Foto4">
+            <h2>Cadeaubon</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit lectus vitae ipsum tincidunt porttitor. Pellentesque vehicula purus sit amet risus tempus ullamcorper. In ut dui iaculis, elementum felis eu, suscipit est. Nullam sit amet lacus id mauris consectetur feugiat. Nunc auctor vestibulum mollis.</p>
+            <a class="button" href="Verhaal-orchidee.html">Lees meer</a>
+        </section>
+*/
+
+#main_nav ul {
+    background: white;
+    float: left;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#main_nav li {
+    float: left;
+    position: relative;
+    width: 150px;
+    list-style: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#main_nav > ul > li > a,
+
+#main_nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #9e1072;
+}
+
+#main_nav ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#main_nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+#main_nav li:hover,
+#main_nav li:hover li {
+    background: #C4C7D9;
+}
+
+#main_nav li li:hover,
+#main_nav li li:hover li {
+    background: #AF9376;
+}
+
+#main_nav li li li:hover {
+    background: #C4C7D9;
+    position: static;
+}
+
+#main_nav li:hover > ul {
+    visibility: visible;
+    position: static;
+    opacity: 1;
+}
+
+#C1,#C2,#C3,#C4,#C5,#C6,#C7,#C8{
+    margin-top: 60px;
+    margin-bottom: 3%;
+}
+
+article section {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 2%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+ul.a {
+    list-style-type: circle;
+    display: grid;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+.item {
+    /* 250*/
+    height: 300px;
+    width: 300px;
+    background-image: url("Backgroundfoto123.png");
+    border-radius: 100%;
+    float: left;
+    margin: 3%;
+    margin-left: 5%;
+}
+
+
+a div p {
+    margin-top: 35%;
+    font-size: 45px;
+    font-family: serif;
+    text-align: center;
+    color: #9e1072;
+}
+
+h1 {
+    float: left;
+}
+
+.mainimage {
+    width: 100%;
+}
+
+.subimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 20%;
+}
+
+section {
+    float: none;
+}
+
+section img {
+    float: left;
+}
+
+section h2 {
+    font-weight: bold;
+    color: #940868;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    display: block;
+    background-color: #9e1072;
+    border-top: #940868 3px solid;
+    line-height: 1.42857;
+}
+
+.footerbox {
+    float: left;
+    padding: 30px;
+}
+
+.footerbox h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+footer li {
+    padding-top: 5px;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+}
+
+.tobeimage {
+    background: #9e5c62;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: normal;
+    border: 0;
+    border-radius: 0;
+    background: #940868;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+ul#social li {
+    display: inline;
+}
+
+section#maps img {
+    float: none;
+    margin-left: 90%;
+}
+
+section#maps p {
+    margin-left: 90%;
+}
+
+section#maps h2 {
+    margin-left: 90%;
+}
+
+ul#bimages li {}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    display: inline;
+    text-decoration: none;
+    border-radius: 30%;
+    /*Can be changed*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #ffffff;
+}
+
+.fa-instagram {
+    background: #3B5998;
+    color: #ffffff;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#up {
+    padding-top: 40px;
+}
+
+.paginalinks li a {
+    color: #940868;
+}
+
+
+.nav-item li a {
+    color: #ffffff;
+}
+
+.nav-item ul {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #9e1072;
+    border-radius: 20%;
+}
+
+.fa-list.modify {
+    display: none;
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+section.centertext {
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+section.maps {
+    margin-left: 0;
+    margin-bottom: 10%;
+    margin-right: 5%;
+}
+
+ul li a {
+    color: #ffffff;
+}
+
+p.naam {
+    font-size: 40px;
+    margin-top: 2%;
+    color: #9e1072;
+    /*
+    font-family: 'Shadows Into Light', cursive;
+        */
+    font-family: 'Sedgwick Ave', cursive;
+}
+ 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #9e1072;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #cc1565;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1000px){
+    
+    #main_nav li li li:hover {
+        position: static;
+    }
+
+    #main_nav li:hover > ul {
+        position: static;
+    }
+    
+    #main_nav li {
+        float: none;
+    }  
+    
+    #main_nav > ul > li > a,
+
+#main_nav a {
+    margin-left: auto;
+    margin-right: auto;
+    
+    } 
+    
+    #main_nav ul {
+    float: none;
+}
+    article{
+        margin-top: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .item {
+        margin: 5%;
+        margin-left: 32%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    body {
+        line-height: 1.42857;
+    }
+
+    .dropdown {
+        line-height: 1.42857;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    h1 {
+        float: none;
+    }
+
+    article section {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    section img {
+        float: none;
+    }
+
+    section#maps img {
+        float: none;
+        margin-left: 0%;
+    }
+
+    section#maps p {
+        margin-left: 0%;
+    }
+
+    section#maps h2 {
+        margin-left: 0%;
+    }
+
+
+    .nav {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    ul li {
+        width: 100%;
+        float: none;
+    }
+
+    ul li a {
+        width: 100%;
+        display: block;
+    }
+
+    ul li ul {
+        position: static;
+    }
+
+    .fa-list.modify {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        width: 100%;
+    }
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    body {
+        line-height: 1.42857;
+        width: 100%;
+    }
+
+    .dropdown {
+        line-height: 1.42857;
+    }
+
+    .mainimage {
+        height: 200px;
+    }
+
+    article section {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    
+    .item {
+        margin: 10%;
+        margin-left: 25%;
+        margin-right: 2%;
+    }
+}
