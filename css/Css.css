@@ -196,6 +196,12 @@ h1 {
     height: 400px;
 }
 
+.aboutsection {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
 .subimage {
     display: block;
     margin-left: auto;
@@ -286,15 +292,16 @@ ul#social li {
 
 section#maps img {
     float: none;
-    margin-left: 55%;
+    margin-left: 95%;
 }
 
 section#maps p {
-    margin-left: 55%;
+    margin-left: 95%;
 }
 
 section#maps h2 {
-    margin-left: 55%;
+    margin-top: 20px;
+    margin-left: 95%;
 }
 
 ul#bimages li {}
@@ -370,6 +377,7 @@ section.centertext {
 }
 
 section.maps {
+    margin-top: 10%;
     margin-left: 0;
     margin-bottom: 10%;
     margin-right: 5%;
