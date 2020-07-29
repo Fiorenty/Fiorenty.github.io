@@ -115,7 +115,7 @@ article {
 
 #main_nav li li:hover,
 #main_nav li li:hover li {
-    background: #5B7C37;
+    background: #8eb95f;
 }
 
 #main_nav li li li:hover {
@@ -223,7 +223,7 @@ footer {
     height: auto;
     color: #ffffff;
     display: block;
-    background-color: #5B7C37;
+    background-color: #8eb95f;
     border-top: #5B7C37 3px solid;
     line-height: 1.42857;
 }
@@ -284,15 +284,15 @@ ul#social li {
 
 section#maps img {
     float: none;
-    margin-left: 90%;
+    margin-left: 55%;
 }
 
 section#maps p {
-    margin-left: 90%;
+    margin-left: 55%;
 }
 
 section#maps h2 {
-    margin-left: 90%;
+    margin-left: 55%;
 }
 
 ul#bimages li {}
