@@ -75,7 +75,6 @@ article {
 #main_nav ul {
     background: white;
     float: left;
-    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -84,8 +83,6 @@ article {
     position: relative;
     width: 150px;
     list-style: none;
-    -webkit-transition: .5s;
-    transition: .5s;
 }
 
 #main_nav > ul > li > a,
@@ -118,7 +115,7 @@ article {
 
 #main_nav li li:hover,
 #main_nav li li:hover li {
-    background: #AF9376;
+    background: #5B7C37;
 }
 
 #main_nav li li li:hover {
@@ -128,7 +125,6 @@ article {
 
 #main_nav li:hover > ul {
     visibility: visible;
-    position: static;
     opacity: 1;
 }
 
