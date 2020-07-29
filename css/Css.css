@@ -39,7 +39,8 @@ header {
 header li {
     display: inline;
     vertical-align: middle;
-    padding: 0 20px 0 20px;
+    /*padding: 0 20px 0 20px;*/
+    padding-left: 20px;
 }
 
 header a {
@@ -91,6 +92,7 @@ article {
     display: block;
     text-align: left;
     text-decoration: none;
+    padding-left: 10px;
     padding: 5px 0px;
     color: #9e1072;
 }
@@ -115,7 +117,7 @@ article {
 
 #main_nav li li:hover,
 #main_nav li li:hover li {
-    background: #8eb95f;
+    background: #77915E;
 }
 
 #main_nav li li li:hover {
@@ -223,7 +225,7 @@ footer {
     height: auto;
     color: #ffffff;
     display: block;
-    background-color: #8eb95f;
+    background-color: #77915E;
     border-top: #5B7C37 3px solid;
     line-height: 1.42857;
 }
