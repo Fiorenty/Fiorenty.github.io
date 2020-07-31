@@ -117,7 +117,7 @@ article {
 
 #main_nav li li:hover,
 #main_nav li li:hover li {
-    background: #77915E;
+    background: #849C6E;
 }
 
 #main_nav li li li:hover {
@@ -231,7 +231,7 @@ footer {
     height: auto;
     color: #ffffff;
     display: block;
-    background-color: #77915E;
+    background-color: #849C6E;
     border-top: #5B7C37 3px solid;
     line-height: 1.42857;
 }
