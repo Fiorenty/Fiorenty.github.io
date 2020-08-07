@@ -227,6 +227,15 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.profileimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    height: 369px;
+    margin-bottom: 5%;
+}
+
 footer {
     position: absolute;
     left: 0;
