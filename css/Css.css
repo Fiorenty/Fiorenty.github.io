@@ -4,6 +4,9 @@ body {
     margin: auto;
     font-size: 16px;
     /*16*/
+    /*
+    font-family: 'Raleway', sans-serif;
+    */
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #333333;
@@ -373,7 +376,6 @@ ul {
 section.centertext {
     text-align: center;
     font-size: 20px;
-    font-family: cursive;
 }
 
 section.maps {
