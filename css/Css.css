@@ -235,6 +235,22 @@ section h2 {
     height: 369px;
     margin-bottom: 5%;
 }
+#cursive {
+    font-family: italic;
+}
+
+#SLIDER {
+  position: relative;
+  text-align: center;
+  color: #9e1072;
+  font-weight: bold;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 footer {
     position: absolute;
