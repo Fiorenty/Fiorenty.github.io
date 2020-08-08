@@ -85,7 +85,8 @@
        
         <div id="SLIDER" class="w3-content" style="width:100%">
             <img class="mySlides" src="img/Fotoslider1.png" style="width:100%">
-            <div class="centered">Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring. <p id="cursive">Philippe</p></div>
+            
+            <div id="getuigenis" class="centered">Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring. <p id="cursive">Philippe</p></div>
         </div>
         
         <section class="centertext">
@@ -187,6 +188,38 @@
         setTimeout(carousel, 10000);
     }
 
+</script>
+<script>
+    /*window.onload = Getuigenis;*/
+    
+    function Getuigenis(){
+        
+        
+        var getuigenissen = [];
+        getuigenissen.push({naam: "Simonne",text : "Jij hebt gouden handjes, jij weet waar je moet zijn, ik voel me helemaal nieuw!"});
+        getuigenissen.push({naam: "Philippe",text : "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."});
+        getuigenissen.push({naam: "Els",text : "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"});
+        getuigenissen.push({naam: "Tom",text : "Dankuwel voor zoveel zachtheid, jouw massages werken ao diep in. Dit is wat ik nodig heb."});
+        console.log(getuigenissen[0].naam)
+        
+        for (var i = 0, count = getuigenissen.length; i < count; i++) {
+            
+                var p = document.createElement("p");
+                p.innerHTML = getuigenissen[i].naam;
+                p.id = "cursive";
+                document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
+                document.getElementById("getuigenis").appendChild(p);
+            sleep(2000);
+        }
+        
+    }
+    function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 </script>
 <script>
     $(document).ready(function() {
