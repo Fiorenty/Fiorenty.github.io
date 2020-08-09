@@ -12,6 +12,10 @@ body {
     color: #333333;
 }
 
+.massageimages {
+    margin-right: 2%;
+}
+
 .nowrap {
     white-space: nowrap;
 }
@@ -236,9 +240,12 @@ section h2 {
     margin-bottom: 5%;
 }
 #cursive {
-    font-family: italic;
+    font-family: 'Architects Daughter',italic;
 }
-
+#getuigenis {
+    font-size: 25px;
+    font-family: 'Architects Daughter', cursive;
+}
 #SLIDER {
   position: relative;
   text-align: center;

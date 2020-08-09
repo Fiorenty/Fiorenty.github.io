@@ -171,28 +171,10 @@
 
 
 <script>
-    var slideIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {
-            slideIndex = 1
-        }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 10000);
-    }
-
-</script>
-<script>
-    /*window.onload = Getuigenis;*/
+    window.onload = Getuigenis;
     
     function Getuigenis(){
+        var i = Math.floor(Math.random() * 3);
         
         
         var getuigenissen = [];
@@ -200,26 +182,17 @@
         getuigenissen.push({naam: "Philippe",text : "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."});
         getuigenissen.push({naam: "Els",text : "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"});
         getuigenissen.push({naam: "Tom",text : "Dankuwel voor zoveel zachtheid, jouw massages werken ao diep in. Dit is wat ik nodig heb."});
-        console.log(getuigenissen[0].naam)
         
-        for (var i = 0, count = getuigenissen.length; i < count; i++) {
             
-                var p = document.createElement("p");
-                p.innerHTML = getuigenissen[i].naam;
-                p.id = "cursive";
-                document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
-                document.getElementById("getuigenis").appendChild(p);
-            sleep(2000);
-        }
+        var p = document.createElement("p");
+        p.innerHTML = getuigenissen[i].naam;
+        p.id = "cursive";
+        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
+        document.getElementById("getuigenis").appendChild(p);
+        
+        setTimeout(Getuigenis, 5000);
         
     }
-    function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
 </script>
 <script>
     $(document).ready(function() {
