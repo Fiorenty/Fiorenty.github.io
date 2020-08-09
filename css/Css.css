@@ -47,7 +47,7 @@ header li {
     display: inline;
     vertical-align: middle;
     /*padding: 0 20px 0 20px;*/
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 header a {
@@ -89,7 +89,7 @@ article {
 #main_nav li {
     float: left;
     position: relative;
-    width: 150px;
+    width: 125px;
     list-style: none;
 }
 
