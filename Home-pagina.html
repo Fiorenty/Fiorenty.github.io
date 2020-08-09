@@ -177,7 +177,6 @@
     window.onload = Getuigenis;
     
     function Getuigenis(){
-        var i = Math.floor(Math.random() * 3);
         
         
         var getuigenissen = [];
@@ -185,6 +184,9 @@
         getuigenissen.push({naam: "Philippe",text : "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."});
         getuigenissen.push({naam: "Els",text : "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"});
         getuigenissen.push({naam: "Tom",text : "Dankuwel voor zoveel zachtheid, jouw massages werken ao diep in. Dit is wat ik nodig heb."});
+        getuigenissen.push({naam: "Rumi",text : "Life is a balance of holding on and letting go"});
+        getuigenissen.push({naam: "John",text : "La casa Floreny listens with her hands and heart ❤️ Every time I am coming home"});
+        var i = Math.floor(Math.random() * getuigenissen.length);
         
             
         var p = document.createElement("p");
