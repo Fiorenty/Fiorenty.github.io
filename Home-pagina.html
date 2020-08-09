@@ -20,7 +20,7 @@
     <header class="myheader">
         <h1><a href="Home-pagina.html"><img class="stuff" src="img/logo_fiorenti.png" height="82" width="324" alt="Logo"></a></h1>
         <section class="container">
-            <div class="menu"><span class="fa fa-list modify"></span></div>
+            <div class="menu"><span onclick="myMenu()" class="fa fa-list modify"></span></div>
             <nav id="main_nav">
                 <ul id="up">
                     <li>
@@ -196,4 +196,17 @@
         setTimeout(Getuigenis, 5000);
         
     }
+</script>
+
+<script>
+    
+    function myMenu(){
+        if(document.getElementById("main_nav").style.display == "none"){
+            document.getElementById("main_nav").style.display = "block";
+        } else {
+           document.getElementById("main_nav").style.display = "none";
+            document.getElementsByTagName("ARTICLE")[0].style.marginTop = "0";
+        }
+    }
+
 </script>
