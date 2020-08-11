@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Oorkaarsen | La Casa Fiorenti</title>
+    <title>Zen-shiatsu | La Casa Fiorenti</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/Css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +39,7 @@
                         <a class="navtitle" href="">Producten<span class="caret"></span></a>
                         <ul>
                             <li>
-                                <a href="https://lacasaforenti.myorganogold.com/be-nl/" target="_blank">Reishi</a>
+                                <a href="">Reishi</a>
                                 <ul>
                                     <li><a href="https://lacasaforenti.myorganogold.com/be-nl/" target="_blank">koffies</a></li>
                                 </ul>
@@ -51,9 +51,6 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                                        <li>
-                        <a class="navtitle" href="Reading-pagina.html">Reading</a>
                     </li>
                     <li>
                         <a class="navtitle" href="Blog-pagina.html">Workshops</a>
@@ -71,25 +68,18 @@
     <article>
 
         <section class="aboutsection">
-            <img class="massageimages" src="img/5816326500-oorkaars.jpg" alt="Foto3">
-            <h2>Oorkaarsen met etherische olien</h2>
-            <p>Oorkaarsen zijn al lang bekend en o.a. door Chinezen, Tibetanen en Indianen gebruikt ter behandeling van klachten. Het is een prachtige, eenvoudige doch zeer efficiënte en diepgaande therapie om vastzittende energie in ons lichaam te veranderen. Met Kirlian fotografie zijn proeven gedaan en hieruit blijkt dat voor en na de behandeling met oorkaarsen duidelijke verschillen te zien zijn.
-
+            <img class="massageimages" src="img/Opening%2011092016zg.jpg" alt="Foto3" width="500px" height="500px">
+            <h2>Shiatsu</h2>
+            <p>Shiatsu betekent "vingerdruk", komt voort uit de traditionele Chinese geneeskunde en heeft zich verder ontwikkeld in Japan. Shiatsu is een drukpuntmassage en is te vergelijken met acupunctuur. Daar wordt gewerkt met naalden die op bepaalde punten worden gezet.</p>
+            <p>
+                Bij Shiatsu wordt druk gezet met de handen of vingers of andere lichaamsdelen. Een ander verschilpunt met acupunctuur is het fysieke contact. De aanrakingen en de warmte worden ervaren als steun en geven een veilig gevoel.</p>
+            <p>
+                Shiatsu is gebaseerd op het Oosterse principe dat levensenergie stroomt via meridianen of energiebanen.. Het doel is deze stroom te beïnvloeden en het lichaam gezond te houden door het geven van druk langs deze meridianen. Dit gebeurt meestal met de duim of de muis van de hand.
             </p>
             <p>
-                Een oorkaarsbehandeling gebeurt in fases:</p>
+                Shiatsu bestrijdt geen ziekten. Ze stimuleert de zelfgenezende kracht in het lichaam en grijpt zo onrechtstreeks in op eventuele symptomen. Bovendien werkt shiatsu zeer ontspannend en is dus ideaal voor mensen die last hebben van stress, slapeloosheid, hartkloppingen, stramheid en allerlei spanningen.</p>
             <p>
-                We beginnen eerst zittend met een zachte lymfemassage op de schouders en nek. Daarna liggend op de massagetafel activeren we de oorschelp en plaatsen we de oorkaars voor een 10-tal minuten. Beide oren krijgen een oorkaars.
-            </p>
-            <p>Als allebei de oren behandeld zijn, lig je op je rug en volgt er nog een gezichtsmassage om het evenwicht in je hoofd te herstellen. Hierna blijf je best nog wat liggen om weer helemaal bij jezelf in het hier en nu te komen.</p>
-            <p>
-                Oorkaarsen bevorderen de doorbloeding van het oor en hoofd en de lymfestroom in oren, keel, neus- en bijholten. Door de warmte gaat het trommelvlies trillen en door de trilling versoepelt het trommelvlies, waardoor het doorlaatbaar wordt. De warmte wordt ook overgedragen op accupunctuurpunten in het oor en activeren hierdoor het hele immuunsysteem en de lymfevaten.</p>
-            <p>Oorkaarsentherapie is een ontspannende behandeling voor chronische toestanden, oorsuizing, slapeloosheid, hoofdpijnen, hoofdverkoudheid, stress, zuivering, versterking immuunsysteem, depressie …</p>
-            <p>Men spreekt van een weldadig, bevrijdend en lichter gevoel in het hoofd</p>
-            <p>Ik werk met Lucie Oorkaarsen met etherische oliën. Deze zijn handgemaakt uit natuurlijke materialen.</p>
-            <p>Met Aanvullende massages nekmassage en lymfedrainage, hand- en voetmassage, oorreflexmassage</p>
-            <p>Wordt gekleed gegeven op stoel en massagetafel
-            </p>
+                Een shiatsu-behandeling wordt gekleed gegeven op een shiatsu-mat op de grond. Door zachte drukbewegingen, wiegen, vloeinde stretchings… ontvang je nieuwe energie en een totaal-gevoel, een nieuw evenwicht.</p>
             <table>
                 <tr>
                     <th>Tijd</th>
@@ -97,11 +87,19 @@
                 </tr>
 
                 <tr>
-                    <td>60min</td>
-                    <td>60€</td>
+                    <td>160min</td>
+                    <td>80€</td>
+                </tr>
+                <tr>
+                    <td>90min</td>
+                    <td>55€</td>
+                </tr>
+                <tr>
+                    <td>180min</td>
+                    <td>110€</td>
                 </tr>
             </table>
-                            <a class="button" href="Contact-pagina.html">Maak een afspraak</a>
+            <a class="button" href="Contact-pagina.html">Maak een afspraak</a>
             <a class="button" href="Massages-pagina.html">Alle massages</a>
         </section>
 

@@ -2,7 +2,7 @@ body {
     background-color: #ffffff;
     width: 80%;
     margin: auto;
-    font-size: 16px;
+    font-size: 15px;
     /*16 */
     /*
     font-family: 'Raleway', sans-serif;
@@ -47,7 +47,7 @@ header li {
     display: inline;
     vertical-align: middle;
     /*padding: 0 20px 0 20px;*/
-    padding-left: 16px;
+    padding-left: 10px;
 }
 
 header a {
@@ -99,7 +99,7 @@ article {
     display: block;
     text-align: left;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 16px;
     padding: 5px 0px;
     color: #9e1072;
 }
@@ -205,7 +205,7 @@ h1 {
 
 .aboutsection {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 
@@ -240,11 +240,11 @@ section h2 {
     margin-bottom: 5%;
 }
 #cursive {
-    font-family: 'Architects Daughter',italic;
+    font-family: 'Calligraffitti',italic;
 }
 #getuigenis {
-    font-size: 25px;
-    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    font-family: 'Calligraffitti', cursive;
 }
 #SLIDER {
   position: relative;
