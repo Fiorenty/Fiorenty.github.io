@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div w3-include-html="headerinclude.html"></div> 
+    <header class="myheader" w3-include-html="headerinclude.html"></header> 
 
     <article>
       
@@ -183,7 +183,6 @@ function includeHTML() {
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
           /* Remove the attribute, and call this function once more: */
           elmnt.removeAttribute("w3-include-html");
-            console.log(elmnt.innerHTML);
           includeHTML();
         }
       }
