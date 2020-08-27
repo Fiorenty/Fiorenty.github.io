@@ -17,54 +17,7 @@
 </head>
 
 <body>
-    <header class="myheader">
-        <h1><a href="Home-pagina.html"><img class="stuff" src="img/logo_fiorenti.png" height="82" width="324" alt="Logo"></a></h1>
-        <section class="container">
-            <div class="menu"><span class="fa fa-list modify"></span></div>
-            <nav id="main_nav">
-                <ul id="up">
-                    <li>
-                        <a class="navtitle" href="Massages-pagina.html">Massages<span class="caret"></span></a>
-                        <ul>
-                            <li><a href="Shiatsu-subpagina.html">Shiatsu</a></li>
-                            <li><a href="Raindrop-subpagina.html">Raindrop Massage</a></li>
-                            <li><a href="Oorkaarsan-subpagina.html">Oorkaarsen</a></li>
-                            <li><a href="Oliemassage-subpagina.html">Energetische Oliemassage</a></li>
-                            <li><a href="Hoofd-nek-shouders-subpagina.html">Rug-Schouder massage</a></li>
-                            <li><a href="Holistic%20Pulsing-subpagina.html">Holistic Pulsing</a></li>
-                            <li><a href="Voetreflexologie-subpagina.html">Voetreflexologie</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="navtitle" href="">Producten<span class="caret"></span></a>
-                        <ul>
-                            <li>
-                                <a href="https://lacasaforenti.myorganogold.com/be-nl/" target="_blank">Organo koffie</a>
-                            </li>
-                            <li>
-                                <a href="">Forever Aloe Vera</a>
-                            </li>
-                            <li>
-                                <a href="">Energetische producten</a>
-                            </li>
-                        </ul>
-                    </li>
-                                        <li>
-                        <a class="navtitle" href="Reading-pagina.html">Reading</a>
-                    </li>
-                    <li>
-                        <a class="navtitle" href="Blog-pagina.html">Workshops</a>
-                    </li>
-                    <li>
-                        <a class="navtitle" href="About-pagina.html">About</a>
-                    </li>
-                    <li>
-                        <a class="navtitle" href="Contact-pagina.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+    <header class="myheader" w3-include-html="headerinclude.html"></header> 
     <article>
 
         <section class="aboutsection">
@@ -155,3 +108,36 @@
 </body>
 
 </html>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+
+<script>
+includeHTML();
+</script>
