@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/Css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/Top.png">
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 </head>
+
 
 <body>
     <header class="myheader">
@@ -96,7 +98,11 @@
             <p class="naam">Veerle</p>
 
         </section>
-            <img class="mySlides" src="img/Foto2.png" style="width:100%">
+        <div id="SLIDER" class="w3-content" style="width:100%">
+            <img class="mySlides" src="img/Fotoslider1.png" style="width:100%">
+            
+            <div id="getuigenis" class="centered">Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring. <p id="cursive">Philippe</p></div>
+        </div>
         <section>
             <h2>
                 Energetische behandelingen</h2>
@@ -157,3 +163,30 @@
 </body>
 
 </html>
+
+<script>
+    window.onload = Getuigenis;
+    
+    function Getuigenis(){
+        
+        
+        var getuigenissen = [];
+        getuigenissen.push({naam: "Simonne",text : "Jij hebt gouden handjes, jij weet waar je moet zijn, <br> ik voel me helemaal nieuw!"});
+        getuigenissen.push({naam: "Philippe",text : "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."});
+        getuigenissen.push({naam: "Els",text : "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"});
+        getuigenissen.push({naam: "Tom",text : "Dank u wel voor zoveel zachtheid, jouw massages werken zo diep in. Dit is wat ik nodig heb."});
+        getuigenissen.push({naam: "Rumi",text : "Life is a balance of holding on and letting go."});
+        getuigenissen.push({naam: "John",text : "La Casa Fiorenti listens with her hands and heart, every time I am coming home."});
+        var i = Math.floor(Math.random() * getuigenissen.length);
+        
+            
+        var p = document.createElement("p");
+        p.innerHTML = getuigenissen[i].naam;
+        p.id = "cursive";
+        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
+        document.getElementById("getuigenis").appendChild(p);
+        
+        setTimeout(Getuigenis, 8000);
+        
+    }
+</script>
