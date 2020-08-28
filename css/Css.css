@@ -88,6 +88,11 @@ article {
     list-style: none;
 }
 
+#subnavtitle {
+    width: 125px;
+    padding-left: 0px;
+}
+
 #main_nav > ul > li > a,
 
 #main_nav a {
