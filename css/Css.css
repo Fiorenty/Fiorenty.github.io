@@ -12,15 +12,11 @@ body {
     color: #333333;
 }
 
-.massageimages {
-    margin-right: 2%;
-}
-
 .nowrap {
     white-space: nowrap;
 }
 
-.navtitle{
+.navtitle {
     font-size: 20px;
 }
 
@@ -51,7 +47,7 @@ header li {
 }
 
 header a {
-    text-decoration: none; 
+    text-decoration: none;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -137,7 +133,14 @@ article {
     opacity: 1;
 }
 
-#C1,#C2,#C3,#C4,#C5,#C6,#C7,#C8{
+#C1,
+#C2,
+#C3,
+#C4,
+#C5,
+#C6,
+#C7,
+#C8 {
     margin-top: 60px;
     margin-bottom: 3%;
 }
@@ -150,19 +153,20 @@ article section {
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+    background-color: #dddddd;
 }
 
 ul.a {
@@ -208,6 +212,16 @@ h1 {
     margin-bottom: 5%;
 }
 
+.massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.massagesection > div {
+    margin-right: 2%;
+}
+
 
 .subimage {
     display: block;
@@ -239,24 +253,28 @@ section h2 {
     height: 369px;
     margin-bottom: 5%;
 }
+
 #cursive {
-    font-family: 'Calligraffitti',italic;
+    font-family: 'Calligraffitti', italic;
 }
+
 #getuigenis {
     font-size: 30px;
     font-family: 'Calligraffitti', cursive;
 }
+
 #SLIDER {
-  position: relative;
-  text-align: center;
-  color: #9e1072;
-  font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #9e1072;
+    font-weight: bold;
 }
+
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
@@ -367,8 +385,8 @@ ul#bimages li {}
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: #ffffff;
+    background: #007bb5;
+    color: #ffffff;
 }
 
 ul {
@@ -431,7 +449,7 @@ p.naam {
         */
     font-family: 'Sedgwick Ave', cursive;
 }
- 
+
 input[type=text],
 select,
 textarea {
@@ -479,8 +497,15 @@ input[type=submit]:hover {
     clear: both;
 }
 
-@media screen and (max-width: 1000px){
-    
+@media screen and (max-width: 1000px) {
+
+    .massagesection {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
     #main_nav li li li:hover {
         position: static;
     }
@@ -488,23 +513,24 @@ input[type=submit]:hover {
     #main_nav li:hover > ul {
         position: static;
     }
-    
+
     #main_nav li {
         float: none;
-    }  
-    
+    }
+
     #main_nav > ul > li > a,
 
-#main_nav a {
-    margin-left: auto;
-    margin-right: auto;
-    
-    } 
-    
+    #main_nav a {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
     #main_nav ul {
-    float: none;
-}
-    article{
+        float: none;
+    }
+
+    article {
         margin-top: 70%;
     }
 
@@ -516,9 +542,24 @@ input[type=submit]:hover {
         margin-left: 32%;
         margin-right: 2%;
     }
+
+    .massagesection {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 1410px) {
+
+    .massagesection {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
     body {
         line-height: 1.42857;
     }
@@ -619,7 +660,7 @@ input[type=submit]:hover {
         width: 90%;
         margin-bottom: 5%;
     }
-    
+
     .item {
         margin: 10%;
         margin-left: 25%;
