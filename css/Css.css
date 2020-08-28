@@ -267,10 +267,22 @@ section h2 {
     font-family: 'Calligraffitti', cursive;
 }
 
+#therapie {
+    font-size: 30px;
+    font-family: 'Calligraffitti', cursive;
+}
+
 #SLIDER {
     position: relative;
     text-align: center;
     color: #9e1072;
+    font-weight: bold;
+}
+
+#SLIDERFREQUENTIE {
+        position: relative;
+    text-align: center;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -553,6 +565,10 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: column;
     }
+    
+    body
+    
+    
 }
 
 @media screen and (max-width: 1410px) {
