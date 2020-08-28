@@ -85,11 +85,12 @@ article {
 #main_nav li {
     float: left;
     position: relative;
+    margin-left: 5px;
     list-style: none;
 }
 
 #subnavtitle {
-    width: 125px;
+    width: 200px;
     padding-left: 0px;
 }
 
@@ -99,7 +100,6 @@ article {
     display: block;
     text-align: left;
     text-decoration: none;
-    padding-left: 16px;
     padding: 5px 0px;
     color: #9e1072;
 }
@@ -395,7 +395,7 @@ ul#bimages li {}
 
 ul {
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 #up {
