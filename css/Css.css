@@ -241,6 +241,7 @@ section {
 
 section img {
     float: left;
+    margin-right: 10px;
 }
 
 section h2 {
@@ -552,6 +553,7 @@ input[type=submit]:hover {
 
 }
 
+
 @media screen and (max-width: 1500px) {
     .item {
         margin: 5%;
@@ -571,7 +573,7 @@ input[type=submit]:hover {
     
 }
 
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1250px) {
 
     .massagesection {
         margin-top: 10%;
