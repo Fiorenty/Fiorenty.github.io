@@ -515,40 +515,15 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1000px) {
+    #getuigenis {
+        font-size: 100%;
+    }
 
     .massagesection {
         margin-top: 10%;
         margin-bottom: 5%;
         display: flex;
         flex-direction: column;
-    }
-
-    #main_nav li li li:hover {
-        position: static;
-    }
-
-    #main_nav li:hover > ul {
-        position: static;
-    }
-
-    #main_nav li {
-        float: none;
-    }
-
-    #main_nav > ul > li > a,
-
-    #main_nav a {
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    #main_nav ul {
-        float: none;
-    }
-
-    article {
-        margin-top: 70%;
     }
 
 }
@@ -574,6 +549,33 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1250px) {
+        #main_nav li li li:hover {
+        position: static;
+    }
+    
+    #main_nav {
+        display: none;
+    }
+
+    #main_nav li:hover > ul {
+        position: static;
+    }
+
+    #main_nav li {
+        float: none;
+    }
+
+    #main_nav > ul > li > a,
+
+    #main_nav a {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #main_nav ul {
+        float: none;
+    }
 
     .massagesection {
         margin-top: 10%;
@@ -674,9 +676,6 @@ input[type=submit]:hover {
         line-height: 1.42857;
     }
 
-    .mainimage {
-        height: 200px;
-    }
 
     article section {
         width: 90%;

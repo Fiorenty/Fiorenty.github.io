@@ -77,6 +77,16 @@
 </html>
 
 
+<script>
+    function myMenu(){
+        if(document.getElementById("main_nav").style.display == "none"){
+            document.getElementById("main_nav").style.display = "block";
+        } else {
+           document.getElementById("main_nav").style.display = "none";
+        }
+    }
+</script>
+
 
 
 <script>
@@ -106,17 +116,6 @@
     }
 </script>
 
-<script>
-    function myMenu(){
-        if(document.getElementById("main_nav").style.display == "none"){
-            document.getElementById("main_nav").style.display = "block";
-        } else {
-           document.getElementById("main_nav").style.display = "none";
-            document.getElementsByTagName("ARTICLE")[0].style.marginTop = "0";
-        }
-    }
-
-</script>
 
 <script>
 function includeHTML() {
@@ -151,3 +150,4 @@ function includeHTML() {
 <script>
 includeHTML();
 </script>
+<script src="scriptincludernav.js"></script>
