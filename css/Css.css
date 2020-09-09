@@ -211,6 +211,10 @@ h1 {
     height: 400px;
 }
 
+.mainimagefreuqentie {
+    width: 100%;
+}
+
 .aboutsection {
     margin-top: 10%;
     margin-bottom: 5%;
@@ -281,6 +285,7 @@ section h2 {
 }
 
 #SLIDERFREQUENTIE {
+    padding-top: 2%;
         position: relative;
     text-align: center;
     color: #ffffff;
@@ -311,10 +316,24 @@ footer {
     padding: 30px;
 }
 
+.footertext {
+    float: right;
+    margin-top: 200px;
+    padding-bottom: 10px;
+}
+
 .footerbox h3 {
     font-size: 20px;
     padding-bottom: 5px;
     font-weight: bold;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#briefemail {
+    color: black;
 }
 
 footer li {

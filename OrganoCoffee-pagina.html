@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Frequentietherapie | La Casa Fiorenti</title>
+    <title>Organo Coffie | La Casa Fiorenti</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/Css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,14 +22,12 @@
 
     <article>
 
-        <img class="mainimagefreuqentie" src="img/Bannerfrequency.PNG" alt="">
         <section class="massagesection">
-
             <div>
-                <img class="massageimages" src="img/Plasma_globe_60th%20(1).jpg" alt="Foto3" width="493px" height="450px">
+                <img class="massageimages" src="img/OG_Logo.JPG" alt="Foto3" width="493px" height="450px">
             </div>
             <div>
-                <h2>Frequentietherapie</h2>
+                <h2>Organo coffie</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque faucibus mauris non ultrices. Ut et odio laoreet metus sollicitudin maximus. Phasellus sodales bibendum enim, a bibendum nisl feugiat at. Praesent maximus lorem at orci facilisis tincidunt. Phasellus at pharetra justo. Praesent tincidunt condimentum turpis, sagittis pretium quam luctus sed. Vivamus id massa ac ex dignissim ullamcorper id in metus. Maecenas hendrerit, ligula vitae congue imperdiet, lacus massa congue odio, eget vestibulum augue velit vel tortor. In euismod ornare risus, mattis vulputate neque varius mattis. Cras metus tellus, ultrices a congue a, gravida eu massa. Fusce dignissim leo a cursus laoreet. Mauris nec velit vitae quam semper imperdiet. Sed auctor ornare felis sit amet elementum. Donec non ultrices nisl. Duis ullamcorper risus sed neque accumsan commodo. Proin dui nisl, placerat in scelerisque consectetur, imperdiet non mi.
                 </p>
                 <p>
@@ -45,49 +43,14 @@
 </html>
 
 
-<!--
-        <div id="SLIDERFREQUENTIE" class="w3-content" style="width:100%">
-            <img class="mySlides" src="img/bannerfrequentietherapie.jpg" style="width:100%">
-
-            <div id="therapie" class="centered">If you want to find the secrets of the universe, think in terms of energy, frequency and vibration. <p id="cursive">Nikolas Tesla</p>
-            </div>
-        </div>
-
--->
 
 
 <script>
-    window.onload = Therapie;
-
-    function Therapie() {
-
-
-        var getuigenissen = [];
-        getuigenissen.push({
-            naam: "-Nikolas Tesla",
-            text: "If you want to find the secrets of the universe, <br> think in terms of energy, frequency and vibration."
-        });
-        var i = Math.floor(Math.random() * getuigenissen.length);
-
-
-        var p = document.createElement("p");
-        p.innerHTML = getuigenissen[i].naam;
-        p.id = "cursive";
-        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
-        document.getElementById("getuigenis").appendChild(p);
-
-        setTimeout(Getuigenis, 8000);
-
-    }
-
-</script>
-
-<script>
-    function myMenu() {
-        if (document.getElementById("main_nav").style.display == "none") {
+    function myMenu(){
+        if(document.getElementById("main_nav").style.display == "none"){
             document.getElementById("main_nav").style.display = "block";
         } else {
-            document.getElementById("main_nav").style.display = "none";
+           document.getElementById("main_nav").style.display = "none";
             document.getElementsByTagName("ARTICLE")[0].style.marginTop = "0";
         }
     }
@@ -95,42 +58,36 @@
 </script>
 
 <script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /* Loop through a collection of all HTML elements: */
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /* Make an HTTP request using the attribute value as the file name: */
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {
-                            elmnt.innerHTML = this.responseText;
-                        }
-                        if (this.status == 404) {
-                            elmnt.innerHTML = "Page not found.";
-                        }
-                        /* Remove the attribute, and call this function once more: */
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /* Exit the function: */
-                return;
-            }
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
         }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
     }
-
+  }
+}
 </script>
 
 <script>
-    includeHTML();
-
+includeHTML();
 </script>
 <script src="scriptincludernav.js"></script>
