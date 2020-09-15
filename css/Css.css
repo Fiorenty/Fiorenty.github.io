@@ -2,12 +2,12 @@ body {
     background-color: #ffffff;
     width: 80%;
     margin: auto;
-    font-size: 15px;
-    /*16 */
+    font-size: 17px;
+    /*15 */
     /*
     font-family: 'Raleway', sans-serif;
     */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     color: #333333;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .navtitle {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 header {
@@ -117,6 +117,10 @@ article {
     top: 0;
 }
 
+#nieuwsbrief {
+    display: flex;
+}
+
 #main_nav li:hover,
 #main_nav li:hover li {
     background: #C4C7D9;
@@ -147,6 +151,7 @@ article {
 #C8 {
     margin-top: 60px;
     margin-bottom: 3%;
+    display: flex;
 }
 
 article section {
@@ -567,7 +572,7 @@ input[type=submit]:hover {
     
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1180px) {
         #main_nav li li li:hover {
         position: static;
     }
