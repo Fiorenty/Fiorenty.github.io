@@ -291,7 +291,7 @@ section h2 {
 
 #SLIDERFREQUENTIE {
     padding-top: 2%;
-        position: relative;
+    position: relative;
     text-align: center;
     color: #ffffff;
     font-weight: bold;
@@ -565,17 +565,28 @@ input[type=submit]:hover {
         display: flex;
         flex-direction: column;
     }
-    
+
     body
-    
-    
 }
 
 @media screen and (max-width: 1180px) {
-        #main_nav li li li:hover {
+    #main_nav li li li:hover {
         position: static;
     }
-    
+
+    #C1,
+    #C2,
+    #C3,
+    #C4,
+    #C5,
+    #C6,
+    #C7,
+    #C8 {
+        margin-top: 60px;
+        margin-bottom: 3%;
+        display: block;
+    }
+
     #main_nav {
         display: none;
     }
