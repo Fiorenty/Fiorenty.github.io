@@ -16,6 +16,10 @@ body {
     white-space: nowrap;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .navtitle {
     font-size: 22px;
 }
@@ -198,6 +202,20 @@ a.active {
     margin-left: 5%;
 }
 
+.leavespace {
+    margin-top: 10px;
+}
+
+.coffieimage {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.colorchanger {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #E4E5ED;
+}
 
 a div p {
     margin-top: 35%;
