@@ -23,6 +23,7 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
         var nothanks = document.getElementsByClassName("popupnothanks")[0];
+        var submit = document.getElementsByClassName("popupsubmit")[0];
         console.log(nothanks);
 
         // When the user clicks the button, open the modal
@@ -34,6 +35,11 @@
         }
 
         nothanks.onclick = function() {
+            modal.style.display = "none";
+            document.cookie = "username=nothanks";
+        }
+        
+        submit.onclick = function() {
             modal.style.display = "none";
             document.cookie = "username=nothanks";
         }

@@ -650,7 +650,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-#popupsubmit {
+.popupsubmit {
     margin-top: 10px;
     margin-right: 31%;
 }
