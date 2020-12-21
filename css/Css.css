@@ -768,10 +768,9 @@ input[type=submit]:hover {
         flex-direction: column;
     }
 
-    body
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
     .popupdisplay-content {
         bottom: 220px;
     }
