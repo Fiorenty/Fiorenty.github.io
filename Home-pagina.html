@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head w3-include-html="headinclude.html">
-   <title>Home | La Casa Fiorenti</title>
+    <title>Home | La Casa Fiorenti</title>
 </head>
 
 <body>
@@ -64,83 +64,111 @@
         </a>
         -->
     </article>
+    <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
     <footer w3-include-html="footerinclude.html"></footer>
 </body>
 
 </html>
 
 
-<script>
-    function myMenu(){
-        if(document.getElementById("main_nav").style.display == "none"){
-            document.getElementById("main_nav").style.display = "block";
-        } else {
-           document.getElementById("main_nav").style.display = "none";
-        }
-    }
-</script>
-
-
 
 <script>
     window.onload = Getuigenis;
-    
-    function Getuigenis(){
-        
-        
+
+    function Getuigenis() {
+
+
         var getuigenissen = [];
-        getuigenissen.push({naam: "Simonne",text : "Jij hebt gouden handjes, jij weet waar je moet zijn, <br> ik voel me helemaal nieuw!"});
-        getuigenissen.push({naam: "Philippe",text : "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."});
-        getuigenissen.push({naam: "Els",text : "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"});
-        getuigenissen.push({naam: "Tom",text : "Dank u wel voor zoveel zachtheid, jouw massages werken zo diep in. Dit is wat ik nodig heb."});
-        getuigenissen.push({naam: "Rumi",text : "Life is a balance of holding on and letting go."});
-        getuigenissen.push({naam: "John",text : "La Casa Fiorenti listens with her hands and heart, every time I am coming home."});
+        getuigenissen.push({
+            naam: "Simonne",
+            text: "Jij hebt gouden handjes, jij weet waar je moet zijn, <br> ik voel me helemaal nieuw!"
+        });
+        getuigenissen.push({
+            naam: "Philippe",
+            text: "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."
+        });
+        getuigenissen.push({
+            naam: "Els",
+            text: "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"
+        });
+        getuigenissen.push({
+            naam: "Tom",
+            text: "Dank u wel voor zoveel zachtheid, jouw massages werken zo diep in. Dit is wat ik nodig heb."
+        });
+        getuigenissen.push({
+            naam: "Rumi",
+            text: "Life is a balance of holding on and letting go."
+        });
+        getuigenissen.push({
+            naam: "John",
+            text: "La Casa Fiorenti listens with her hands and heart, every time I am coming home."
+        });
         var i = Math.floor(Math.random() * getuigenissen.length);
-        
-            
+
+
         var p = document.createElement("p");
         p.innerHTML = getuigenissen[i].naam;
         p.id = "cursive";
         document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
         document.getElementById("getuigenis").appendChild(p);
-        
+
         setTimeout(Getuigenis, 8000);
-        
+
     }
+
 </script>
 
+<script w3-include-html="popup-javascriptinclude.html"></script>
 
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
-}
+
 </script>
 
 <script>
-includeHTML();
+    includeHTML();
+
 </script>
+
 <script src="scriptincludernav.js"></script>
+
+<script>
+    function myMenu() {
+        if (document.getElementById("main_nav").style.display == "none") {
+            document.getElementById("main_nav").style.display = "block";
+        } else {
+            document.getElementById("main_nav").style.display = "none";
+        }
+    }
+
+</script>

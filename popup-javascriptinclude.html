@@ -1,0 +1,50 @@
+
+    function displaypopup() {
+       // Get the modal
+        var modal = document.getElementById("mypopupdisplay");
+        console.log(document.cookie);
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf("username=") == 0) {
+                console.log(c);
+                return;
+            }
+        }
+
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var nothanks = document.getElementsByClassName("popupnothanks")[0];
+        console.log(nothanks);
+
+        // When the user clicks the button, open the modal
+        modal.style.display = "block";
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        nothanks.onclick = function() {
+            modal.style.display = "none";
+            document.cookie = "username=nothanks";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    setTimeout(displaypopup, 20000);
+
+
