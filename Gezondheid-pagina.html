@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head w3-include-html="headinclude.html">
+    <title>Gezondheid | La Casa Fiorenti</title>
+</head>
+
+<body>
+    <header class="myheader" w3-include-html="headerinclude.html"></header>
+
+
+    <section class="aboutsection">
+        <img class="gezondheid" src="img/HaveALovelyDay.jpg" alt="Foto3" width="300px" height="300px">
+        <h2>ERVAAR ZELF DE KRACHT VAN DE NATUUR</h2>
+        <p>Alleen met goede producten kan een goede immuniteit ontstaan waardoor ons LICHAAM & GEEST de teisteringen van de buitenwereld aankan.</p>
+
+        <p>Ik GELOOF in deze natuurlijke producten die mijn gezondheid ondersteunen.</p>
+
+        <p class="bold">Organo Gold Reishi koffie, thee en choco : <a href="OrganoCoffee-pagina.html">klik hier</a></p>
+        <p>omdat zij balans brengen in lichaam & geest. Het dagelijks drinken maakt me fysiek en mentaal sterk.
+        </p>
+        <p class="bold">Young Living Etherische Olien: <a href="EtherischeOlie-pagina">klik hier</a></p>
+        <p>om de kracht die van 1 druppel uitkomt. Fantastisch wat een verschil dit maakt in mijn massages</p>
+
+    </section>
+    <img class="gezondheid" src="img/touch%20the%20body%20heal%20the%20spirt.jpg" alt="Foto3" width="300px" height="200px">
+    <section class="centertext" style="margin-bottom: 5%;">
+        <p class="cursive" style="margin-bottom: 10px;">“In het licht van de realiteit is het een goede zaak dat het individu meer en meer zelf zijn verantwoordelijkheid opneemt voor de eigen gezondheid en bereid is tot de nodige mentaliteitswijziging. Mensen die zelf het initiatief nemen om zowel lichamelijk als psychisch gezond te blijven en dit niet in handen van anderen willen geven, nemen een verstandige beslissing!”</p>
+        <p class="cursive">Prof. Dr. Phil. Roland Stutz</p>
+    </section>
+
+    <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
+    <footer w3-include-html="footerinclude.html"></footer>
+</body>
+
+</html>
+
+<script w3-include-html="popup-javascriptinclude.html"></script>
+
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+
+</script>
+
+<script>
+    includeHTML();
+
+</script>
+
+<script src="scriptincludernav.js"></script>
+
+<script>
+    function myMenu() {
+        if (document.getElementById("main_nav").style.display == "none") {
+            document.getElementById("main_nav").style.display = "block";
+        } else {
+            document.getElementById("main_nav").style.display = "none";
+        }
+    }
+
+</script>

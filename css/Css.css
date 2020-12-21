@@ -262,6 +262,13 @@ h1 {
     height: 20%;
 }
 
+.subimagekado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+}
+
 section {
     float: none;
 }
@@ -284,6 +291,31 @@ section h2 {
     width: 258px;
     height: 369px;
     margin-bottom: 5%;
+}
+
+.gezondheid {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oliesection {
+    margin-bottom: 5%;
+}
+
+.gezondheidsection {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gezondheidsection1 {
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.cursive {
+    font-family: cursive;
 }
 
 #cursive {
@@ -341,7 +373,6 @@ footer {
 
 .footertext {
     float: right;
-    margin-top: 200px;
     padding-bottom: 10px;
 }
 
@@ -349,6 +380,10 @@ footer {
     font-size: 20px;
     padding-bottom: 5px;
     font-weight: bold;
+}
+
+.smalltext {
+    font-size: 12px;
 }
 
 #bold {
@@ -592,7 +627,7 @@ input[type=submit]:hover {
     width: 25%;
     right: 20px;
     top: 200px;
-    bottom: 300px;
+    bottom: 310px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -639,7 +674,6 @@ input[type=submit]:hover {
 .popupdisplay-body {
     padding: 2px 16px;
     text-align: center;
-    margin-bottom: 100%;
 }
 
 .popupdisplay-footer {
@@ -658,6 +692,11 @@ input[type=submit]:hover {
 #popupnothanks {
     float: right;
     opacity: 0.5;
+}
+
+#popuplogo {
+    float: left;
+    margin-left: 10px;
 }
 
 #popupbriefemail {
@@ -735,7 +774,12 @@ input[type=submit]:hover {
 
 
 
-
+@media screen and (max-width: 1525px) {
+    .footer {
+        width: 100%;
+        margin: auto;
+    }
+}
 
 
 
@@ -749,6 +793,11 @@ input[type=submit]:hover {
         margin-bottom: 5%;
         display: flex;
         flex-direction: column;
+    }
+
+    .footer {
+        width: 100%;
+        margin: auto;
     }
 
 }
@@ -771,9 +820,11 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1200px) {
+
     .popupdisplay-content {
         bottom: 220px;
     }
+
     #main_nav li li li:hover {
         position: static;
     }
