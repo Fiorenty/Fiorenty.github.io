@@ -681,6 +681,7 @@ input[type=submit]:hover {
 .popupdisplay-body {
     padding: 2px 16px;
     text-align: center;
+    margin-top: 7px;
 }
 
 .popupdisplay-footer {
