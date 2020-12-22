@@ -10,7 +10,7 @@
             while (c.charAt(0) == ' ') {
                 c = c.substring(1);
             }
-            if (c.indexOf("username=") == 0) {
+            if (c.indexOf("usernameflorenty=") == 0) {
                 console.log(c);
                 return;
             }
@@ -36,12 +36,12 @@
 
         nothanks.onclick = function() {
             modal.style.display = "none";
-            document.cookie = "username=nothanks";
+            document.cookie = "usernameflorenty=nothanks";
         }
         
         submit.onclick = function() {
             modal.style.display = "none";
-            document.cookie = "username=nothanks";
+            document.cookie = "usernameflorenty=nothanks";
         }
 
         // When the user clicks anywhere outside of the modal, close it

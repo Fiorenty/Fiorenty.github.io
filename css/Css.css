@@ -374,6 +374,7 @@ footer {
 .footertext {
     float: right;
     padding-bottom: 10px;
+    margin-top: 250px;
 }
 
 .footerbox h3 {
@@ -622,12 +623,18 @@ input[type=submit]:hover {
 }
 
 .popupdisplay-content {
+    /*
+    background: rgba(0,0,0,0.3);
+    background-image: url("logo_massages.png");
+    background-size: cover;
+    */
+    
     position: fixed;
     background-color: #fefefe;
     width: 25%;
     right: 20px;
     top: 200px;
-    bottom: 310px;
+    height: 225px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -770,18 +777,51 @@ input[type=submit]:hover {
 
 
 
+@media screen and (max-width: 1460px) {
+    .popupdisplay-content {
+        height: 250px;
+    }
+}
 
+@media screen and (max-width: 1200px) {
+    .popupdisplay-content {
+        height: 320px;
+    }
+}
 
+@media screen and (max-width: 780px) {
+    .popupdisplay-content {
+        height: 350px;
+    }
+}
 
+@media screen and (max-width: 1800px) {
+    .footertext {
+        margin-top: 0px;
+    } 
+}
 
 @media screen and (max-width: 1525px) {
     .footer {
         width: 100%;
         margin: auto;
     }
+    
+    .footertext {
+        margin-top: 250px;
+    }
+
 }
 
+@media screen and (max-width: 1267px) {
+    .footertext {
+        margin-top: 0px;
+    }
+}
 
+@media screen and (max-width: 1053px) {
+    
+}
 
 @media screen and (max-width: 1000px) {
     #getuigenis {
@@ -927,8 +967,10 @@ input[type=submit]:hover {
 
     ul li a {
         width: 100%;
-        display: block;
+        /*display: block;*/
     }
+    
+    
 
     ul li ul {
         position: static;
