@@ -701,9 +701,9 @@ input[type=submit]:hover {
     opacity: 0.5;
 }
 
-#popuplogo {
+.popuplogo {
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #popupbriefemail {
