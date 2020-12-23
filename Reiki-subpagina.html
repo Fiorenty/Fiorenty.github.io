@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head w3-include-html="headinclude.html">
+    <title>Reiki | La Casa Fiorenti</title>
+</head>
+
+<body>
+    <header class="myheader" w3-include-html="headerinclude.html"></header>
+    <article>
+
+        <section class="reiki">
+            <div>
+                <img class="massageimages" src="img/Reiki.jpg" alt="Foto3">
+            </div>
+            <div>
+                <h2 style="margin-top: 2%;">Geniet van een Reiki-behandeling en kom in Balans met je innerlijke zelf.</h2>
+                <p class="leavespace">Een Reiki-behandeling werkt ontspannend en brengt je lichaam, je geest en je energetisch lichaam terug in balans. Reiki heelt je fysieke en energetische lichaam.
+
+                </p>
+                <p class="leavespace">
+                    Als iemand lichamelijk niet in orde is, is dat een teken van onbalans in het energetisch veld.</p>
+                <p class="leavespace">
+                   Door een Reiki-behandeling komt er extra energie beschikbaar voor het lichaam. Op dat moment krijgt het lichaam meer energie voor herstel. Het zelfgenezingsmechanisme van het lichaam wordt (terug) in gang gezet.
+                </p>
+                <p class="leavespace" style="margin-bottom: 5%;">Bij een behandeling lig je gekleed in rust op een massagetafel. Door middel van warme handen boven of op het lichaam stroomt energie naar plaatsen waar deze energie nodig is. Dit gebeurt door een welbepaalde serie handposities zodat het ganse lichaam behandeld wordt. Ook chakra’s worden gebalanceerd zodat je je opnieuw heel en verbonden voelt.</p>
+                <p class="leavespace">
+                    We starten steeds met een verkennend gesprek. Het is aan te raden om 3 behandelingen kort na elkaar te ontvangen voor optimaal resultaat.  Het is mogelijk dat een reeks behandelingen begint met een sessie Reiki om vervolgens over te gaan tot een zachte Shiatsu.</p>
+                <p class="leavespace">Het is na elke behandeling belangrijk voldoende water te drinken om de veranderingen in uw lichaam te ondersteunen.</p>
+
+                <p class="leavespace">Wees welkom</p>
+                <p>Veerle Florenty
+                </p>
+                <p>Reiki Master & Shamballa Multi Dimensional Healer</p>
+            </div>
+        </section>
+        <section>
+            <table>
+                <tr>
+                    <th>Tijd</th>
+                    <th>Prijs</th>
+                </tr>
+
+                <tr>
+                    <td>60min</td>
+                    <td>40€</td>
+                </tr>
+            </table>
+            <a class="button" href="Contact-pagina.html#afspraak">Maak een afspraak</a>
+            <a class="button" href="Massages-pagina.html">Alle massages</a>
+        </section>
+
+
+    </article>
+    <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
+    <footer w3-include-html="footerinclude.html"></footer>
+</body>
+
+</html>
+<script w3-include-html="popup-javascriptinclude.html"></script>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+
+<script>
+includeHTML();
+</script>
+<script src="scriptincludernav.js"></script>
