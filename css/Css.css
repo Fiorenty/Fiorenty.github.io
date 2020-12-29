@@ -82,6 +82,7 @@ article {
 
 #main_nav ul {
     background: white;
+    opacity: 1;
     float: left;
     transition: .5s;
 }
@@ -95,6 +96,7 @@ article {
     position: relative;
     margin-left: 5px;
     list-style: none;
+    
 }
 
 #subnavtitle {
@@ -118,6 +120,7 @@ article {
     top: 100%;
     visibility: hidden;
     opacity: 0;
+    background: rgba(255, 255, 255, 0); 
 }
 
 #main_nav ul ul ul {
@@ -147,6 +150,7 @@ article {
 #main_nav li:hover > ul {
     visibility: visible;
     opacity: 1;
+    background: rgba(255, 255, 255, 0); 
 }
 
 #C1,
@@ -242,6 +246,11 @@ h1 {
     width: 100%;
 }
 
+.massageimages {
+    height: 400px;
+    width: 400px;
+}
+
 .aboutsection {
     margin-top: 10%;
     margin-bottom: 5%;
@@ -250,13 +259,11 @@ h1 {
 .massagesection {
     margin-top: 10%;
     margin-bottom: 5%;
-    display: flex;
 }
 
 .massagesection > div {
     margin-right: 2%;
 }
-
 
 .subimage {
     display: block;
