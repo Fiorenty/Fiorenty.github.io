@@ -605,8 +605,6 @@ input[type=submit]:hover {
 
 
 
-
-
 .popupdisplay {
     display: none;
     /* Hidden by default */
@@ -768,7 +766,9 @@ input[type=submit]:hover {
     }
 }
 
-
+strong {
+  font-weight: bold;
+}
 
 
 
