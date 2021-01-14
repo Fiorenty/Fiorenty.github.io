@@ -31,6 +31,7 @@ header {
     top: 0;
     width: 80%;
     height: auto;
+    z-index: 100;
 }
 
 .footerimage {
@@ -1010,7 +1011,6 @@ strong {
     .col-25,
     .col-75,
     input[type=submit] {
-        width: 100%;
         margin-top: 0;
     }
 
