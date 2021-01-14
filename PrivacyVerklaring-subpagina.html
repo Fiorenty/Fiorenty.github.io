@@ -27,11 +27,13 @@
                     rechtstreekse contacten met u als betrokkene. Deze gegevens worden niet
                     systematisch verwerkt, maar wel bijgehouden om u te kunnen contacteren.
                     In deze gevallen is verwerking gebaseerd op de contractuele relatie of op
-                    de daaraan voorafgaande contacten.</p><p>
+                    de daaraan voorafgaande contacten.</p>
+                <p>
                     Op de website van La Casa Fiorenti zijn een aantal cookies geplaatst met
                     als enkele doel het bezoek van de site mogelijk te maken en optimaal te
                     laten verlopen en u toe te laten via het formulier te communiceren. U wordt
-                niet gevolgd doorheen de site.</p><p class="leavespace">
+                    niet gevolgd doorheen de site.</p>
+                <p class="leavespace">
                     La Casa Fiorenti verwerkt persoonsgegevens overeenkomstig deze
                     privacyverklaring. Voor verdere informatie, vragen of opmerkingen omtrent
                     ons privacy beleid, kunt u een mail versturen naar info@lacasafiorenti.be</p>
@@ -139,36 +141,42 @@
 </html>
 <script w3-include-html="popup-javascriptinclude.html"></script>
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
-}
+
 </script>
 
 <script>
-includeHTML();
+    includeHTML();
+
 </script>
 <script src="scriptincludernav.js"></script>

@@ -640,7 +640,7 @@ input[type=submit]:hover {
 
     position: fixed;
     background-color: #fefefe;
-    width: 25%;
+    width: 350px;
     right: 20px;
     top: 200px;
     height: 235px;
@@ -812,7 +812,7 @@ strong {
     }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1660px) {
     .footertext {
         margin-top: 0px;
         margin-right: 5px;
@@ -831,7 +831,7 @@ strong {
 
 }
 
-@media screen and (max-width: 1267px) {
+@media screen and (max-width: 1335px) {
     .footertext {
         margin-top: 0px;
     }
