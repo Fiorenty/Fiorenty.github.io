@@ -24,6 +24,10 @@ body {
     font-size: 22px;
 }
 
+.color {
+    color: #9e1072;
+}
+
 header {
     border-bottom: #9e1072 3px solid;
     background-color: #ffffff;
@@ -106,6 +110,10 @@ article {
     margin-left: 5px;
     list-style: none;
     
+}
+
+.coffieimagestyle{
+    margin-bottom: 70%;
 }
 
 #subnavtitle {
@@ -893,6 +901,10 @@ strong {
 
     .popupdisplay-content {
         bottom: 220px;
+    }
+    
+    .coffieimagestyle{
+        margin-bottom: 0%;
     }
 
     #main_nav li li li:hover {
