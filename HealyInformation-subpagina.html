@@ -10,7 +10,7 @@
 
     <article>
 
-        <section class="massagesection" style="display: flex;">
+        <section class="massagesection">
             <!--
             <div>
                 <img class="massageimages" src="img/Therapiagrafiekfoto.png" alt="Foto3" width="493px" height="450px">
@@ -22,14 +22,43 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div>
-                <h2>Frequentietherapie</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque faucibus mauris non ultrices. Ut et odio laoreet metus sollicitudin maximus. Phasellus sodales bibendum enim, a bibendum nisl feugiat at. Praesent maximus lorem at orci facilisis tincidunt. Phasellus at pharetra justo. Praesent tincidunt condimentum turpis, sagittis pretium quam luctus sed. Vivamus id massa ac ex dignissim ullamcorper id in metus. Maecenas hendrerit, ligula vitae congue imperdiet, lacus massa congue odio, eget vestibulum augue velit vel tortor. In euismod ornare risus, mattis vulputate neque varius mattis. Cras metus tellus, ultrices a congue a, gravida eu massa. Fusce dignissim leo a cursus laoreet. Mauris nec velit vitae quam semper imperdiet. Sed auctor ornare felis sit amet elementum. Donec non ultrices nisl. Duis ullamcorper risus sed neque accumsan commodo. Proin dui nisl, placerat in scelerisque consectetur, imperdiet non mi.
+            <div style="margin-bottom: 5%;">
+                <h2><strong>MEER WELZIJN VAN BINNENUIT !</strong></h2>
+                <h2><strong>Met FREQUENTIETHERAPIE wil ik je begeleiden naar een Gezondere
+                        Geest in een Vitaler Lichaam.</strong></h2>
+                <p class="leavespace">De basis van een gezond lichaam is energie dat stroomt naar gezonde cellen!
                 </p>
-                <p>
-                    Vestibulum at aliquam nulla. Pellentesque vitae ligula sapien. Mauris non posuere metus. Mauris vel turpis felis. Duis ullamcorper in est in maximus. Mauris sed lectus nec quam imperdiet dapibus quis ut elit. Pellentesque pellentesque iaculis feugiat. Aenean consequat pretium nulla quis dictum. Vivamus sodales, ante vitae sollicitudin sollicitudin, sapien arcu fermentum mauris, vitae vestibulum est lectus ut nisi. Proin lorem orci, auctor ac sollicitudin vel, laoreet sit amet enim. Curabitur maximus mauris rhoncus sem maximus mollis.
+                <p class="leavespace">
+                    Gezondheid mag je niet als vanzelfsprekend beschouwen, en bovendien
+                    betekent gezondheid voor iedereen iets anders!</p>
+            </div>
+            <div style="margin-bottom: 5%;">
 
-                </p>
+                <p class="leavespace">Frequentietherapie wordt ook wel Bioresonantie-therapie genoemd,
+                    biofeedback op processen die zich in het lichaam en energieveld afspelen.</p>
+                <p class="leavespace">Met Healy wordt gekeken welke systemen in je lichaam uit balans zijn.</p>
+                <p class="leavespace">Alle cellen in ons lichaam hebben een eigen energiefrequentie die uit balans
+                    kunnen geraken door oa spanning, stress of ziekte.</p>
+                <p class="leavespace">In de Healy zitten 144.000 frequenties voor verschillende fysieke, emotionele
+                    en mentale issues. Deze geven hogere frequenties aan cellen in je lichaam
+                    zodat gezondheidsklachten worden verminderd, opgelost of voorkomen.</p>
+            </div>
+            <div style="margin-bottom: 5%;">
+                <p class="leavespace">Misschien ben jij op zoek naar een alternatieve manier om pijntjes en ongemak
+                    te verbeteren?</p>
+                <p class="leavespace">Of wil je de balans tussen je lichaam, geest en ziel herstellen, zodat je je weer
+                    meer heel voelt?</p>
+                <p class="leavespace">Of Wil je meer vreugde en vitaliteit ervaren en je gevoel van welzijn
+                    verbeteren, minder stress?</p>
+            </div>
+            <div>
+                <p class="leavespace">Wil je weten hoe Frequentietherapie je gezondheid kan verbeteren of hoe
+je hiermee van je klachten verbetert ?</p>
+           <p class="leavespace">Neem gerust contact met me op voor meer informatie.</p>
+            </div>
+            <div>
+                <p class="color">“ Healy is een draagbaar wonderapparaatje dat leidt tot een magisch
+leven “.</p>
             </div>
         </section>
 
@@ -38,17 +67,19 @@
     </article>
     <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
     <footer w3-include-html="footerinclude.html"></footer>
-</body></html>
+</body>
+
+</html>
 
 
 <script w3-include-html="popup-javascriptinclude.html"></script>
 
 <script>
-    function myMenu(){
-        if(document.getElementById("main_nav").style.display == "none"){
+    function myMenu() {
+        if (document.getElementById("main_nav").style.display == "none") {
             document.getElementById("main_nav").style.display = "block";
         } else {
-           document.getElementById("main_nav").style.display = "none";
+            document.getElementById("main_nav").style.display = "none";
             document.getElementsByTagName("ARTICLE")[0].style.marginTop = "0";
         }
     }
@@ -56,36 +87,42 @@
 </script>
 
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
-}
+
 </script>
 
 <script>
-includeHTML();
+    includeHTML();
+
 </script>
 <script src="scriptincludernav.js"></script>
