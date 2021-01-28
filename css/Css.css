@@ -330,7 +330,7 @@ section h2 {
 }
 
 .oliesection {
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
 .gezondheidsection {
@@ -529,6 +529,11 @@ ul {
 
 .nav-item li a {
     color: #ffffff;
+}
+
+.oliedisplay{
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-item ul {
