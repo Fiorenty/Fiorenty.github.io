@@ -9,7 +9,7 @@
     <header class="myheader" w3-include-html="headerinclude.html"></header>
     <article>
         <section class="massagesection">
-           <img src="img/3.png" alt=""  width="500px" height="350px">
+            <img src="img/3.png" alt="" width="500px" height="350px">
             <p class="leavespace" style="color: #940868;text-align: justify;"><strong>Wat kan ik voor je doen?</strong></p>
             <p style="text-align: justify" class="leavespace">Zou jij geinteresseerd zijn in een GRATIS analyse en behandeling op afstand met
                 helende frequenties om kennis te maken met Healy?</p>
@@ -23,6 +23,21 @@
                 worden gegeven.</p>
             <p style="text-align: justify" class="leavespace">Ben je benieuwd wat nog meer kan?</p>
         </section>
+        <section>
+            <table>
+                <tr>
+                    <th>Tijd</th>
+                    <th>Prijs</th>
+                </tr>
+
+                <tr>
+                    <td>*min</td>
+                    <td>*€</td>
+                </tr>
+            </table>
+            <a class="button" href="Contact-pagina.html#afspraak">Maak een afspraak</a>
+            <a class="button" href="Massages-pagina.html">Alle massages</a>
+        </section>
 
     </article>
     <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
@@ -32,36 +47,42 @@
 </html>
 <script w3-include-html="popup-javascriptinclude.html"></script>
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
-}
+
 </script>
 
 <script>
-includeHTML();
+    includeHTML();
+
 </script>
 <script src="scriptincludernav.js"></script>
