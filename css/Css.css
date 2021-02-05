@@ -261,6 +261,18 @@ a.active {
     color: white;
 }
 
+.colorchangerOlie {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: #5B7C37
+}
+
+
 a div p {
     margin-top: 35%;
     font-size: 45px;
@@ -621,6 +633,11 @@ p.naam {
 
 writing {
     font-family: 'Calligraffitti';
+}
+
+.writing {
+    font-size: 25px;
+    font-family: 'Sedgwick Ave';
 }
 
 input[type=text],
