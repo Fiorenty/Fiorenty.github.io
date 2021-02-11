@@ -892,6 +892,12 @@ strong {
     }
 }
 
+@media screen and (max-width: 1270px) {
+    #aboutpagedis{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .popupdisplay-content {
         height: 360px;
@@ -1198,7 +1204,7 @@ strong {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     header {
         width: 100%;
     }
