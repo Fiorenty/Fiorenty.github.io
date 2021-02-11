@@ -9,8 +9,14 @@
     <header class="myheader" w3-include-html="headerinclude.html"></header>
 
     <article>
+        
+        <div id="SLIDER" class="w3-content" style="width:100%;">
+            <img class="mainimagefreuqentie" src="img/Plasma_globe_60th.jpg" style="width:100%;">
 
-        <img class="mainimagefreuqentie" src="img/Plasma_globe_60th3de.jpg" alt="">
+            <div id="getuigenisabout" class="centeredabout" style="color:white;">If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.<p id="cursiveabout"></p>
+            </div>
+        </div>
+
 
         <section class="massagesection" style="margin-top: 5%;">
 
@@ -96,16 +102,16 @@
         var getuigenissen = [];
         getuigenissen.push({
             naam: "-Nikolas Tesla",
-            text: "If you want to find the secrets of the universe, <br> think in terms of energy, frequency and vibration."
+            text: "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."
         });
         var i = Math.floor(Math.random() * getuigenissen.length);
 
 
         var p = document.createElement("p");
         p.innerHTML = getuigenissen[i].naam;
-        p.id = "cursive";
-        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
-        document.getElementById("getuigenis").appendChild(p);
+        p.id = "cursiveabout";
+        document.getElementById("getuigenisabout").innerHTML = getuigenissen[i].text;
+        document.getElementById("getuigenisabout").appendChild(p);
 
         setTimeout(Getuigenis, 8000);
 

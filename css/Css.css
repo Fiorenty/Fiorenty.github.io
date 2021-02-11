@@ -300,6 +300,11 @@ h1 {
     border-radius: 0px 0px 100px 100px;
 }
 
+#mainimagefreuqentie {
+    width: 100%;
+    border-radius: 0px 0px 100px 100px;
+}
+
 .massageimages {
     height: 400px;
     width: 400px;
@@ -436,6 +441,16 @@ section h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.centeredabout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: 'Sedgwick Ave';
+    width: 80%;
 }
 
 footer {
@@ -613,7 +628,7 @@ section.centertext {
 }
 
 section.maps {
-    margin-top: 10%;
+    margin-top: 99px;
     margin-left: 0;
     margin-right: 5%;
 }
@@ -893,8 +908,12 @@ strong {
 }
 
 @media screen and (max-width: 1270px) {
-    #aboutpagedis{
+    #aboutpagedis {
         flex-direction: column;
+    }
+    
+    .centeredabout{
+        font-size: 20px;
     }
 }
 
@@ -902,6 +921,17 @@ strong {
     .popupdisplay-content {
         height: 360px;
     }
+    
+    .subimagekado {
+        width: 400px;
+        height: 250px;
+    }
+    
+    .map {
+        width: 400px;
+        height: 250px;
+    }
+    
 }
 
 @media screen and (max-width: 1660px) {
@@ -930,66 +960,76 @@ strong {
         width: 80%;
         flex-basis: 100%;
     }
-    
+
     #footerbox1 {
         margin-left: 15%;
     }
+
     #footerbox2 {
         margin-left: 10%;
     }
+
     #footerbox3 {
         margin-left: 15%;
     }
+
     #footerbox4 {
         margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 1038px) {
-    .footer{
+    .footer {
         width: 100%;
     }
+
     #footerbox1 {
         margin-left: 5%;
     }
+
     #footerbox2 {
         margin-left: 15%;
     }
+
     #footerbox3 {
         margin-left: 5%;
     }
+
     #footerbox4 {
         margin-left: 10%;
     }
 }
 
 @media screen and (max-width: 786px) {
-    .footer{
+    .footer {
         flex-direction: column;
     }
-    
-    .footerflexbox{
+
+    .footerflexbox {
         display: flex;
         flex-direction: column;
     }
-    
-    .footerimage{
+
+    .footerimage {
         float: none;
     }
-    
+
     #footerbox1 {
         margin-left: 10%;
     }
+
     #footerbox2 {
         margin-left: 15%;
     }
+
     #footerbox3 {
         margin-left: 10%;
     }
+
     #footerbox4 {
         margin-left: 10%;
     }
-    
+
     #footertext1 {
         margin-left: 5%;
     }
@@ -1005,8 +1045,8 @@ strong {
     #footerbox2 {
         margin-left: 10%;
     }
-    
-    .submitfooter{
+
+    input[type=submit] {
         float: none;
     }
 }
@@ -1020,6 +1060,14 @@ strong {
 @media screen and (max-width: 1053px) {}
 
 @media screen and (max-width: 1000px) {
+    .mainimagefreuqentie{
+        height: 150px;
+    }
+    
+    .mySlides {
+        height: 150px;
+    }
+    
     #getuigenis {
         font-size: 100%;
     }
@@ -1102,6 +1150,10 @@ strong {
 
     #main_nav {
         display: none;
+    }
+
+    #main_nav a {
+        display: contents;
     }
 
     #main_nav li:hover > ul {
