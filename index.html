@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head w3-include-html="headinclude.html">
+    <title>Home | La Casa Fiorenti</title>
+</head>
+
+<body>
+    <header class="myheader" w3-include-html="headerinclude.html"></header>
+
+    <article>
+
+        <img class="mainimage" src="img/Foto1ww.png" alt="Foto1">
+
+        <section class="centertext">
+            <h2 style="font-size: 22px;">Graag zet ik met jou de stap naar...</h2>
+            <h2 style="font-size: 22px;">een GEZONDER LEVEN met meer energie, balans, vitaliteit en ontspanning !</h2>
+            <p>Wil je rust in je hoofd?</p>
+            <p>Heb je nood om even te ontsnappen uit deze jachtige wereld?</p>
+            <p>Wil je je gezondheid op natuurlijke wijze ondersteunen?</p>
+            <p>Wil je meer balans lichamelijk en geestelijk?</p>
+        </section>
+        <!--
+        <img class="subimage" src="img/Foto10.jpg" alt="Foto10">
+        -->
+        <section class="centertext">
+            <p>Bij La Casa Fiorenti</p>
+            <p>maken we tijd voor jouw Zen-moment</p>
+            <p>Via een gepaste massage, producten, analyse met Healy</p>
+        </section>
+
+        <section class="centertext">
+
+            <p>Ben je benieuwd wat ik voor je kan doen?</p>
+            <p>Met Oosterse en Westerse technieken komen we een heel eind op weg.</p>
+            <p>Wees Welkom</p>
+        </section>
+
+        <div id="SLIDER" class="w3-content" style="width:100%">
+            <img class="mySlides" src="img/Fotoslider1.png" style="width:100%">
+
+            <div id="getuigenis" class="centered">Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring. <p id="cursive">Philippe</p>
+            </div>
+        </div>
+
+        <section class="centertext">
+            <p>Een maandelijkse Reishi koffiemeeting of een andere workshop bijwonen? </p>
+            <p>Een Gezondheidsparty bij mij of bij jou met Healy?
+                <p>Vraag me gerust naar de mogelijkheden.</p>
+        </section>
+
+        <img class="smalllogo" src="img/logo_massages.png" alt="">
+
+        <section class="centertext">
+
+            <p>Bijzondere maatregelen opgelegd in deze bijzondere tijden</p>
+            <p>Massages gebeuren enkel op afspraak, probeer op tijd binnen te komen, niet te vroeg of te laat.</p>
+            <p>Indien je je ziek of verkouden voelt, verwittig me dan en blijf thuis.</p>
+            <p>We dragen beiden een mondmasker.</p>
+            <p>Bij het binnenkomen van de praktijk zal je gevraagd worden je handen te ontsmetten.</p>
+            <p>Na elke massage wordt de ruimte gepoetst en verlucht. Elke klant heeft propere handdoeken.</p>
+            <p>Douchen is hier niet mogelijk, er zijn individuele vochtige warme doekjes.</p>
+
+        </section>
+
+        <img class="smalllogo" src="img/logo_massages.png" alt="">
+
+        <section class="centertext">
+
+            <p>Graag tot binnenkort,</p>
+            <p class="naam">Veerle</p>
+        </section>
+        <img class="profileimage" src="img/VeerleAgain.jpg" alt="Foto11">
+        <!-- 
+        <a href="Massages-pagina.html">
+            <div class="item">
+                <p>Massages</p>
+            </div>
+        </a>
+
+        <a href="Verhaal-orchidee.html">
+            <div class="item">
+                <p>Blog</p>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="item">
+                <p>Aanbieding</p>
+            </div>
+        </a>
+        -->
+    </article>
+    <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
+    <footer w3-include-html="footerinclude.html"></footer>
+</body>
+
+</html>
+
+
+
+<script>
+    window.onload = Getuigenis;
+
+    function Getuigenis() {
+
+
+        var getuigenissen = [];
+        getuigenissen.push({
+            naam: "Simonne",
+            text: "Jij hebt gouden handjes, jij weet waar je moet zijn, <br> ik voel me helemaal nieuw!"
+        });
+        getuigenissen.push({
+            naam: "Philippe",
+            text: "Wat jij doet is kunst op muziek, het op en neer gaan van de energiën is een zalige ervaring."
+        });
+        getuigenissen.push({
+            naam: "Els",
+            text: "Zoveel tintelingen en lichamelijke reacties op andere plekken dan waar jij bezig bent. Het is magisch!"
+        });
+        getuigenissen.push({
+            naam: "Tom",
+            text: "Dank u wel voor zoveel zachtheid, jouw massages werken zo diep in. Dit is wat ik nodig heb."
+        });
+        getuigenissen.push({
+            naam: "Rumi",
+            text: "Life is a balance of holding on and letting go."
+        });
+        getuigenissen.push({
+            naam: "John",
+            text: "La Casa Fiorenti listens with her hands and her heart, every time I am coming home."
+        });
+        var i = Math.floor(Math.random() * getuigenissen.length);
+
+
+        var p = document.createElement("p");
+        p.innerHTML = getuigenissen[i].naam;
+        p.id = "cursive";
+        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
+        document.getElementById("getuigenis").appendChild(p);
+
+        setTimeout(Getuigenis, 8000);
+
+    }
+
+</script>
+
+<script w3-include-html="popup-javascriptinclude.html"></script>
+
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+
+</script>
+
+<script>
+    includeHTML();
+
+</script>
+
+<script src="scriptincludernav.js"></script>
+
+<script>
+    function myMenu() {
+        if (document.getElementById("main_nav").style.display == "none") {
+            document.getElementById("main_nav").style.display = "block";
+        } else {
+            document.getElementById("main_nav").style.display = "none";
+        }
+    }
+
+</script>
