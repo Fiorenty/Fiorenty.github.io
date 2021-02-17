@@ -366,6 +366,14 @@ section h2 {
     margin-bottom: 20px;
 }
 
+.smalllogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
+
 .profileimage {
     display: block;
     margin-left: auto;
