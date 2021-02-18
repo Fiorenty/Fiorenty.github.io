@@ -9,35 +9,44 @@
     <header class="myheader" w3-include-html="headerinclude.html"></header>
     <article>
 
-        <section class="aboutsection">
-            <img class="massageimages" src="img/readingso.png" alt="Foto3" width="500px" height="500px">
-            <h2>Reading</h2>
-            <p style="text-align: justify;">
-                Een Reading is mogelijk wanneer je duiding wil over gezondheids- of levensvragen.</p>
-            <p style="text-align: justify;margin-top: 2%;">
-                De pendel is al vele jaren een goede vriend en steun op mijn levenstochten. Vanuit dit vertrouwen
-                durf ik ook op anderen afstemmen om advies te verlenen. Dit kan ter plaatse, via messenger of in
-                afstemming, steeds met toestemming van de persoon in kwestie.
-            </p>
-            <p style="text-align: justify;margin-top: 2%;">Tegelijk met Lenormandkaarten en Tarot pendel ik voor jou voor advies of psychologisch inzicht. Dit
-                kan duidingen geven en inzichten brengen in onderwerpen die op dat moment onduidelijk zijn en
-                inzicht vragen.</p>
-            <h2 style="margin-top: 12%;">Mogelijke thema’s, steeds afstemmend met jou en de pendel :</h2>
-            <ul style="text-align: justify;">
-                <li>-Gezondheid, dan lees ik de Medische Lenormand en pendel ik volgens het Chinese model van de 5
-                    elementen en de Organenleer</li>
-                <li>-Situaties, dan gebruik ik de Tarot</li>
-                <li>-Productengebruik, in afstemming met het product, jouw lichaam en de pendel</li>
-            </ul>
-            
-            <p style="text-align: justify;margin-top: 5%;">
-                Wat is belangrijk om te weten? Jijzelf blijft verantwoordelijk voor je keuzes en beslissingen. De
-                Reading is adviserend, niet dwingend. Wanneer een doktersbezoek is aangewezen, zal ik dit ook
-                steeds aanraden. Vanuit mijn ervaring en plicht als Shiatsu-therapeute kan ik niet anders dan op dat
-                moment doorverwijzen.</p>
-            <p style="margin-bottom: 5%;text-align: justify;">Wanneer ik voel dat de afstemming niet kan, zal de Reading op een later tijdstip gebeuren. Ik volg
-                hierin steeds het advies van mijn Innerlijke Leiding.</p>
-            <!---
+        <section class="massagesectionhealy" style="margin-bottom: 0%;">
+            <div>
+                <img class="massageimages" src="img/readingso.png" alt="Foto3" width="500px" height="500px">
+                <h2>Reading</h2>
+                <p style="text-align: justify;">
+                    Een Reading is mogelijk wanneer je duiding wil over gezondheids- of levensvragen.</p>
+                <p style="text-align: justify;margin-top: 2%;">
+                    De pendel is al vele jaren een goede vriend en steun op mijn levenstochten. Vanuit dit vertrouwen
+                    durf ik ook op anderen afstemmen om advies te verlenen. Dit kan ter plaatse, via messenger of in
+                    afstemming, steeds met toestemming van de persoon in kwestie.
+                </p>
+                <p style="text-align: justify;margin-top: 2%;">Tegelijk met Lenormandkaarten en Tarot pendel ik voor jou voor advies of psychologisch inzicht. Dit
+                    kan duidingen geven en inzichten brengen in onderwerpen die op dat moment onduidelijk zijn en
+                    inzicht vragen.</p>
+
+
+            </div>
+        </section>
+        <section class="massagesection" style="margin-top: 1%;">
+            <div>
+
+
+                <h2>Mogelijke thema’s, steeds afstemmend met jou en de pendel :</h2>
+                <ul style="text-align: justify;">
+                    <li>-Gezondheid, dan lees ik de Medische Lenormand en pendel ik volgens het Chinese model van de 5
+                        elementen en de Organenleer</li>
+                    <li>-Situaties, dan gebruik ik de Tarot</li>
+                    <li>-Productengebruik, in afstemming met het product, jouw lichaam en de pendel</li>
+                </ul>
+
+                <p style="text-align: justify;margin-top: 2%;">
+                    Wat is belangrijk om te weten? Jijzelf blijft verantwoordelijk voor je keuzes en beslissingen. De
+                    Reading is adviserend, niet dwingend. Wanneer een doktersbezoek is aangewezen, zal ik dit ook
+                    steeds aanraden. Vanuit mijn ervaring en plicht als Shiatsu-therapeute kan ik niet anders dan op dat
+                    moment doorverwijzen.</p>
+                <p style="margin-bottom: 5%;text-align: justify;">Wanneer ik voel dat de afstemming niet kan, zal de Reading op een later tijdstip gebeuren. Ik volg
+                    hierin steeds het advies van mijn Innerlijke Leiding.</p>
+                <!---
             <p>
                 Wat kan ik voor je doen?</p>
                 <p>
@@ -56,6 +65,11 @@
                     Ben je benieuwd wat nog meer kan?
                 </p>
                 -->
+
+
+            </div>
+        </section>
+        <section>
             <table style="margin-top: 5%;">
                 <tr>
                     <th>Tijd</th>
@@ -74,39 +88,47 @@
     </article>
     <div w3-include-html="popup-nieuwsbriefinclude.html"></div>
     <footer w3-include-html="footerinclude.html"></footer>
-</body></html>
+</body>
+
+</html>
 <script w3-include-html="popup-javascriptinclude.html"></script>
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
-}
+
 </script>
 
 <script>
-includeHTML();
+    includeHTML();
+
 </script>
 <script src="scriptincludernav.js"></script>
