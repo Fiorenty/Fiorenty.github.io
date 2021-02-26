@@ -546,6 +546,10 @@ ul#social li {
     display: inline;
 }
 
+ul#social li img {
+    border-radius: 15%;
+}
+
 section#maps img {
     float: none;
     margin-left: 95%;
