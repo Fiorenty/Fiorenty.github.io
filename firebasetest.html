@@ -40,13 +40,13 @@
         <img class="subimagekado" src="img/11.png" alt="Foto4" width="600px" height="500px">
 
         <section>
-            <form action="https://formspree.io/xrgynlak" method="post">
+            <form action="" method="post">
                 <div class="row">
                     <div class="col-25">
                         <label for="fname">Voornaam:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="Voornaam" name="Voornaam">
+                        <input id="voornaam" type="text" id="Voornaam" name="Voornaam">
                     </div>
                 </div>
                 <div class="row">
@@ -54,7 +54,7 @@
                         <label for="lname">Achternaam:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="Achternaam" name="Achternaam">
+                        <input id="achternaam" type="text" id="Achternaam" name="Achternaam">
                     </div>
                 </div>
                 <div class="row">
@@ -62,7 +62,7 @@
                         <label for="lname">Email Address:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="Email" name="Email">
+                        <input id="email" type="text" id="Email" name="Email">
                     </div>
                 </div>
                 <div class="row">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Send">
+                    <input onclick="saveToFirebase()" type="submit" value="Send">
                 </div>
             </form>
         </section>
@@ -136,6 +136,24 @@
 <script>
     includeHTML();
 
+</script>
+<script>
+function saveToFirebase() {
+    var emailObject = {
+        voornaam:document.getElementById("voornaam"),
+        achternaam:document.getElementById("achternaam"),
+        email:document.getElementById("email"),
+        subject:document.getElementById("subject")
+    };
+
+    firebase.database().ref('subscription-entries').push().set(document.getElementById("email"))
+        .then(function(snapshot) {
+            success(); // some success method
+        }, function(error) {
+            console.log('error' + error);
+            error(); // some error method
+        });
+}
 </script>
 <script src="scriptincludernav.js"></script>
 
