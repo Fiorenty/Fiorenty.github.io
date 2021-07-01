@@ -476,7 +476,7 @@ footer {
 
 .footerbox {
     float: left;
-    padding: 30px;
+    padding: 15px;
 }
 
 .footertext {
@@ -966,7 +966,7 @@ strong {
 
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1205px) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -989,6 +989,10 @@ strong {
     #footerbox4 {
         margin-left: 5%;
     }
+    
+    #footerbox5 {
+        margin-left: 15%;
+    }
 }
 
 @media screen and (max-width: 1038px) {
@@ -1010,6 +1014,10 @@ strong {
 
     #footerbox4 {
         margin-left: 10%;
+    }
+    
+    #footerbox5 {
+        margin-left: 5%;
     }
 }
 
@@ -1053,6 +1061,10 @@ strong {
 
     #footertext1 {
         margin-left: 5%;
+    }
+    
+    #footerbox5 {
+        margin-left: 10%;
     }
 }
 
