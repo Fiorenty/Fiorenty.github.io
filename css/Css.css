@@ -907,7 +907,8 @@ strong {
 .homeproducts {
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .homeproduct {
@@ -916,6 +917,10 @@ strong {
   text-align: center;
   display: flex;
   flex-direction: column;
+  border: 1px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
   gap: 15px
 }
 
@@ -982,6 +987,14 @@ strong {
 
     .centeredabout {
         font-size: 20px;
+    }
+
+    .homeproducts {
+      flex-direction: column;
+    }
+
+    .homeproduct {
+      width: 80%;
     }
 }
 
