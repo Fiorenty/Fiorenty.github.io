@@ -64,6 +64,7 @@ header li {
     vertical-align: middle;
     /*padding: 0 20px 0 20px;*/
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 header a {
@@ -352,6 +353,16 @@ h1 {
     height: 20%;
 }
 
+#main_nav ul li ul {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+}
+
+#main_nav ul li ul li {
+  margin-left: 0px;
+}
+
 section {
     float: none;
 }
@@ -379,8 +390,7 @@ section h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 258px;
-    height: 369px;
+    width: 200px;
     margin-bottom: 5%;
     border-radius: 25px;
 }
@@ -427,6 +437,8 @@ section h2 {
 
 #SLIDER {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: #9e1072;
     font-weight: bold;
@@ -1145,10 +1157,6 @@ strong {
 
     .coffieimagestyle {
         margin-bottom: 0%;
-    }
-
-    #main_nav li li li:hover {
-        position: ;
     }
 
     #C1,
