@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head w3-include-html="headinclude.html">
+    <title>Links | La Casa Fiorenti</title>
+</head>
+
+<body>
+    <header class="myheader" w3-include-html="headerinclude.html"></header>
+    <article>
+     <section style="margin-top:15%;text-align: center;font-weight: bold;" class="aboutsection">
+        <p>Netwerking in deze tijd is FUNDAMENTEEL.</p>
+        <p>Je kan maar beter een goed team rondom je hebben die zich
+        specialiseert om het beste in jou naar boven te brengen!</p>
+        <p>Je hoeft zelf niet alles te weten, niet alles te kennen.</p>
+        <p>Onderzoek jezelf en je vindt wie je bent en wie je niet bent!</p>
+        <p>Enkele tips</p>
+      </section>
+      <section style="display:flex;flex-direction: column;gap: 10px;margin-bottom:40px;">
+        <p><a style="text-decoration: underline;" href="https://www.creawiel.be/">https://www.creawiel.be/</a></p>
+        <p>Non-verbale therapie bij Els Peeters in Rotselaar</p>
+        <p><span style="font-weight: bold;">Creawiel</span> geeft spirituele, verbale en non verbale therapie waarbij je niet over je gevoelens hoeft
+        te praten om emotionele blokkades aan te pakken.</p>
+        <p>Via Brainspotting, Sjamanistische technieken, Breathwork of Fundamentele Kinesiologische
+        Communicatie vindt ze wel een weg naar wat jou ervan weerhoudt ten volle te leven.</p>
+      </section>
+      <section style="display:flex;flex-direction: column;gap: 10px;margin-bottom:40px;">
+        <p><a style="text-decoration: underline;" href="https://www.essenceciel.be/">https://www.essenceciel.be/</a></p>
+        <p>Astrologie met Christine Symons in Tielt-Winge</p>
+        <p><span style="font-weight: bold;">Essence Ciel</span> geeft je de tools om je levensweg te bekijken vanuit een andere invalshoek via
+        karma &amp; zielsgerichte astrologie. Waarom doe je wat je doet!</p>
+      </section>
+      <section style="display:flex;flex-direction: column;gap: 10px;margin-bottom:40px;">
+        <p><a style="text-decoration: underline;" href="https://leysehoef.be/">https://leysehoef.be/</a></p>
+        <p style="color: blue">Centrum voor Bewustzijn en Positieve Gezondheid in Tongerlo</p>
+        <p>In Centrum Leysehoef geeft dr. <span style="font-weight: bold;">Bart Bohy</span> orthopedisch, orthomoleculair en holistische
+        consultaties.</p>
+        <p>Een aanrader als je jezelf verder wil onderzoeken op gezondheidsvlak.</p>
+      </section>
+      <section class="centertext">
+        <p class="writing" style="margin-bottom: 10px; color: #9e1072;font-size: 25px;">“Mensen die zelf het initiatief nemen om
+            zowel lichamelijk als psychisch gezond te
+
+            blijven en dit niet in handen van anderen
+
+            willen geven,
+
+            nemen een verstandige beslissing!”
+        </p>
+        <p class="writing" style=" color: #9e1072;; font-size: 25px;">Prof. Dr. Phil. Roland Stutz</p>
+    </section>
+
+    </article>
+    <footer w3-include-html="footerinclude.html"></footer>
+</body>
+
+</html>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+
+</script>
+
+<script>
+    includeHTML();
+
+</script>
+<script src="scriptincludernav.js"></script>
+<script src="https://penta-power.com/widget/widget.js" type="text/javascript"></script>
