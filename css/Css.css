@@ -1131,6 +1131,10 @@ strong {
         margin-right: 2%;
     }
 
+    .neumi-images {
+      flex-direction: column;
+    }
+
     .massagesection {
         margin-top: 10%;
         margin-bottom: 5%;
