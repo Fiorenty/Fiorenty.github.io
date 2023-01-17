@@ -973,9 +973,17 @@ strong {
   }
 }
 
+#neumi_homeproducts img {
+  margin: auto;
+}
 
+#neumi_homeproducts {
+  gap: 20px
+}
 
-
+#neumi_homeproducts img {
+  width: 50%;
+}
 
 
 
@@ -1009,6 +1017,11 @@ strong {
 
     .homeproduct {
       width: 80%;
+      margin: auto;
+    }
+
+    #neumi_homeproducts img {
+      width: 100%;
     }
 }
 
