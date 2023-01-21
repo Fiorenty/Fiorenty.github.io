@@ -784,7 +784,7 @@ input[type=submit]:hover {
     width: 350px;
     right: 20px;
     top: 200px;
-    height: 235px;
+    height: 300px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
