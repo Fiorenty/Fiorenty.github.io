@@ -784,7 +784,7 @@ input[type=submit]:hover {
     width: 350px;
     right: 20px;
     top: 200px;
-    height: 300px;
+    height: fit-content;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -794,6 +794,7 @@ input[type=submit]:hover {
 }
 
 .close {
+    line-height: 22px;
     color: white;
     float: right;
     font-size: 24px;
@@ -829,7 +830,7 @@ input[type=submit]:hover {
 }
 
 .popupdisplay-body {
-    padding: 2px 16px;
+    padding: 10px 16px;
     text-align: center;
     margin-top: 7px;
 }
@@ -842,19 +843,9 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.popupsubmit {
-    margin-top: 10px;
-    margin-right: 31%;
-}
-
 #popupnothanks {
     float: right;
     opacity: 0.5;
-}
-
-.popuplogo {
-    float: left;
-    margin-left: 20px;
 }
 
 #popupbriefemail {
