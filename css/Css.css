@@ -623,6 +623,11 @@ ul#bimages li {}
     color: #ffffff;
 }
 
+.fa-pinterest {
+  background: #B7081B;
+  color: #ffffff;
+}
+
 ul {
     list-style: none;
     padding: 5px;
