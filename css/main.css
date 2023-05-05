@@ -1,0 +1,570 @@
+body {
+  background-color: #ffffff;
+  width: 80%;
+  margin: auto;
+  font-size: 17px;
+  /*15 */
+  /*
+  font-family: 'Raleway', sans-serif;
+  */
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+.smalltext {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+article {
+  line-height: 1.42857;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.leavespace {
+  margin-top: 10px;
+  margin-bottom: 2%;
+}
+
+p.naam {
+  font-size: 40px;
+  color: #9e1072;
+  /*
+  font-family: 'Shadows Into Light', cursive;
+      */
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    line-height: 1.42857;
+    width: 100%;
+  }
+}
+
+
+
+/* NAVIGATION */
+
+header {
+  border-bottom: #9e1072 3px solid;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  height: auto;
+  z-index: 100;
+}
+
+header h1 {
+  float: left;
+}
+
+header li {
+  display: inline;
+  vertical-align: middle;
+  /*padding: 0 20px 0 20px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#subnavtitle {
+  width: 200px;
+  padding-left: 0px;
+}
+
+.fa-list.modify {
+  display: none;
+  font-size: 35px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.navtitle {
+  font-size: 22px;
+}
+
+#up {
+  padding-top: 40px;
+}
+
+#main_nav ul {
+  background: white;
+  opacity: 1;
+  float: left;
+  margin-left: 15%;
+  transition: .5s;
+}
+
+#main_nav li {
+  float: left;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+#main_nav > ul > li > a,
+
+#main_nav a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px 0px;
+  color: #9e1072;
+}
+
+#main_nav ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0);
+}
+
+#main_nav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+#main_nav li:hover,
+#main_nav li:hover li {
+  background: #C4C7D9;
+}
+
+#main_nav li li:hover,
+#main_nav li li:hover li {
+  background: #849C6E;
+}
+
+#main_nav li li li:hover {
+  background: #C4C7D9;
+  position: static;
+}
+
+#main_nav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0);
+}
+
+#main_nav ul li ul {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+}
+
+#main_nav ul li ul li {
+  margin-left: 0px;
+}
+
+/* MOBILE NAVIGATION */
+
+@media screen and (max-width: 1200px) {
+  #main_nav {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .fa-list.modify {
+    display: block;
+  }
+
+  #main_nav a {
+    display: contents;
+  }
+
+  #main_nav li:hover > ul {
+    position: static;
+  }
+
+  #main_nav li {
+    float: none;
+  }
+
+  #main_nav > ul > li > a,
+
+  #main_nav a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main_nav ul {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* POPUP DISPLAY */
+
+.popupdisplay {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  right: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.popupdisplay-content {
+  position: fixed;
+  background-color: #fefefe;
+  width: 350px;
+  right: 20px;
+  top: 200px;
+  height: fit-content;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  background-color: #E5EAF0;
+  opacity: 0.8;
+}
+
+.popupnothanks {
+  color: gray;
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.popupnothanks:hover,
+.popupnothanks:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popupdisplay-header {
+  padding: 5px 16px;
+  background-color: #9e1072;
+  color: white;
+  text-align: center;
+}
+
+.popupdisplay-body {
+  padding: 10px 16px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.popupdisplay-footer {
+  padding: 5px 16px;
+  background-color: #9e1072;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#popupnothanks {
+  float: right;
+  opacity: 0.5;
+}
+
+#popupbriefemail {
+  color: black;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.close {
+  line-height: 22px;
+  color: white;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* POPUP MOBILE */
+
+@media screen and (max-width: 1460px) {
+  .popupdisplay-content {
+      height: 260px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .popupdisplay-content {
+      height: 330px;
+      bottom: 220px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .popupdisplay-content {
+      height: 360px;
+  }
+}
+
+
+
+/* FOOTER */
+
+.footerimage {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  background-color: #849C6E;
+  border-top: #5B7C37 3px solid;
+  line-height: 1.42857;
+}
+
+.footer {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footerflexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20%
+}
+
+.footertext {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.footerbox h3 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+footer li {
+  padding-top: 5px;
+}
+
+#social {
+  display: flex;
+  gap: 10px;
+}
+
+ul#social li {
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+ul#social li img {
+    border-radius: 15%;
+}
+
+ul li a {
+  color: #ffffff;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  display: inline;
+  text-decoration: none;
+  border-radius: 30%;
+  /*Can be changed*/
+}
+
+.briefemailflex {
+  display: flex; gap: 20px
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: #ffffff;
+}
+
+.fa-instagram {
+  background: #3B5998;
+  color: #ffffff;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: #ffffff;
+}
+
+.fa-pinterest {
+  background: #B7081B;
+  color: #ffffff;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #9e1072;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #cc1565;
+}
+
+@media screen and (max-width: 1960px) {
+  .footerflexbox {
+    gap: 10%;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .footer {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .footerflexbox {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footerbox {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1684px) {
+  .footertext {
+      margin-top: 0px;
+      margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1525px) {
+  .footer {
+      width: 100%;
+      margin: auto;
+  }
+
+  .footertext {
+      margin-top: 250px;
+  }
+
+}
+
+@media screen and (max-width: 1205px) {
+  .footer {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .footer {
+      flex-direction: column;
+  }
+
+  .footerflexbox {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footerimage {
+      float: none;
+  }
+  
+  .briefemailflex {
+    flex-direction: column;
+  }
+}

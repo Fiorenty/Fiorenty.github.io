@@ -1,0 +1,147 @@
+.mainimage {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border-radius: 30px;
+}
+
+article {
+  margin-top: 120px;
+  background-color: #ffffff;
+  line-height: 1.42857;
+}
+
+section.centertext {
+  text-align: center;
+  font-size: 20px;
+}
+
+section.centertext .centertextTitle {
+  font-weight: bold;
+  color: #9e1072;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+section.centertext .centertextSubTitle {
+  color: #9e1072;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+article section {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+article .smalllogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 1270px) {
+  .mainimage {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/* PRODUCTS */
+
+.homeproducts {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.homeproduct {
+  float: left;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  gap: 15px
+}
+
+.homeproduct a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section img {
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  section img {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .homeproducts {
+    flex-direction: column;
+  }
+  .homeproduct {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+/* SLIDER */
+#SLIDER {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #9e1072;
+  font-weight: bold;
+}
+
+.mySlides {
+  border-radius: 100px;
+}
+
+#getuigenis {
+  font-size: 30px;
+  font-family: 'Calligraffitti', cursive;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profileimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-bottom: 5%;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mySlides {
+      height: 150px;
+  }
+
+  #getuigenis {
+    font-size: 100%;
+  }
+}

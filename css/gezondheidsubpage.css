@@ -1,0 +1,182 @@
+article {
+  margin-top: 85px;
+  background-color: #ffffff;
+  line-height: 1.42857;
+}
+
+.massagesectionhealy {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  display: flex;
+}
+
+article section {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 2%;
+}
+
+section {
+  float: none;
+}
+
+#neumi_homeproducts {
+  gap: 20px;
+}
+
+.massagesection {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #940868;
+  margin-bottom: 20px;
+}
+
+.massagesectionhealy > div {
+  margin-right: 2%;
+}
+
+#neumi_homeproducts img {
+  width: 50%;
+  margin: auto;
+}
+
+.homeproduct {
+  float: left;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  gap: 15px;
+}
+
+.colorchangerOlie {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  background-color: #5B7C37;
+}
+
+section img {
+  float: left;
+  margin-right: 10px;
+}
+
+.massageimages {
+  height: 400px;
+  width: 400px;
+}
+
+.oliesection {
+  margin-bottom: 0%;
+}
+
+.coffieimage {
+  margin-top: 20px;
+  margin-left: 20%;
+}
+
+.coffieimagestyle {
+  margin-bottom: 70%;
+}
+
+.colorchangerCoffie {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: #9e1072;
+  color: white;
+}
+
+@media screen and (max-width: 600px){
+  .massageimages {
+    width: 100%;
+    height: initial;
+  }
+
+  .oliesection {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+}
+
+@media screen and (max-width: 1500px){
+  .massagesectionhealy {
+    margin-top: 25%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .coffieimage {
+    margin-left: initial;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  section img {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  article section {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1270px){
+  #neumi_homeproducts img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .neumi-images {
+    flex-direction: column;
+  }
+
+  .neumi-images img {
+    width: 100%;
+  }
+}

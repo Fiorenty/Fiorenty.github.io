@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head w3-include-html="../Head/Head.html">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/aboutpage.css">
+    <title>About | La Casa Fiorenti</title>
+</head>
+
+
+<body>
+  <header class="myheader" w3-include-html="../Header/Header.html"></header>
+    <article>
+
+        <section id="aboutpagedis" class="aboutsection" style="display: flex;margin-bottom: 2%;">
+            <div>
+                <img class="aboutimage" src="../img/AboutPage/veerle-buiten-picture.png" alt="Foto3">
+            </div>
+            <div>
+                <h2>
+                    Net zoals in het boek "De Alchemist van Paulo Coelho" is het thuiskomen na een magische zoektocht !
+                </h2>
+                <p style="text-align: justify;">
+                    Ik wist al zeer vroeg, ik voelde het, ik heb een missie ! Maar wat?</p>
+                <p style="text-align: justify;">
+                    Nergens vond ik een helder antwoord. Ik zag en voelde rondom heel veel mensen met dezelfde levensvraag. Thuiskomen is een persoonlijk proces.
+                    
+                <p class="writing" style="text-align: center;color: #9e1072;font-style: italic;font-size: 20px;margin-top: 4%;">Luister naar je hart. Dat kent alles, omdat het afkomstig van de ziel van de wereld. Waar je hart is, is ook je schat.</p>
+                <p class="writing" style="text-align: center;font-style: italic;color: #9e1072;margin-bottom: 4%;font-size: 20px;">- Paulo Coelho</p>
+                <p style="text-align: justify;">
+                    Ik voelde aansluiting bij de Westerse natuurgeneeskunde maar ook bij de Oosterse filosofie. Welke weg zou ik kiezen? Ooh kiezen, altijd moeilijk ! </p>
+                <p style="text-align: justify;">
+                    Shiatsu-therapie was de eerste logische stap, na mijn basisdiploma van Maatschappelijk Werk, om de holistische mens helemaal te ontdekken. Mijn zoektocht werd ondertussen aangevuld met zoveel mooie en waardevolle therapieën zoals Reiki en Ayurveda die ik mocht ervaren en aanleren.</p>
+                <p style="text-align: justify;">
+                    De zovele positieve ervaringen, en mijn vertrouwen in de kracht van het energetische, lieten mij toe om ook anderen te helpen. Toen ik daarna ontdekte dat mijn naam "tot bloei komen" betekent werd mijn missie echt duidelijk! “La Casa Fiorenti” werd geboren.</p>
+                <p style="text-align: justify;">
+                    Masseren en helen, mensen coachen en inspireren, zelf bijleren en steeds het positieve blijven zien, maken dat ik mij ‘blessed’ voel.</p>
+            </div>
+        </section>
+        <section class="aboutsection" style="margin-top: 0%;">
+                           <p style="text-align: justify;margin-bottom: 2%;">
+                    Toen Healy op mijn pad kwam werd het pas ècht compleet. Want groei, frequenties, trillingen, energiën, daar draait het toch om?
+
+
+                    Elke dag opnieuw ben ik zo dankbaar dat ik deze verwondering van energiën mag omarmen. En dat wil ik ook voor jou.</p>
+            <p style="text-align: justify;">
+                Als Energetisch Therapeute ga ik graag met jou op pad,
+                met mijn handen via Massagebehandelingen die jouw lichaam en geest naar de grootst mogelijke balans brengen,
+                via Vitaliserende Natuurlijke Producten die jou hulpmiddelen aanreiken om jouw gezondheid en immuniteit in balans te brengen,
+                via Energetische Readings omdat ik uit ervaring weet dat we allemaal onze vraagtekens hebben,
+                via een scan met de Healy om jouw Gezondheid te optimaliseren.
+                Dit alles volledig in afstemming met jou, opdat wat jij nodig hebt.</p>
+            <p style="text-align: justify;margin-top: 2%;">
+
+                Welkom bij La Casa Fiorenti!</p>
+            <p class="naam" style="margin-top: 15px;">Veerle</p>
+           
+
+        </section>
+        <div id="SLIDER" class="w3-content" style="width: 80%;">
+            <img class="mySlides" src="../img/AboutPage/flower-background-picture.png" style="width:100%">
+
+            <div id="getuigenis" class="centered">Als je lichaam zijn grenzen begint aan te geven, <br> vergeet dan niet te luisteren <p id="cursive"></p>
+            </div>
+        </div>
+        <!--
+        <section>
+            <h2>
+                Energetische behandelingen</h2>
+            <p style="text-align: justify;">
+                Wat mag jij verwachten: Ik ontvang je graag met een drankje. We maken kennis aan de hand van een vragenlijst die ik met jou overloop. Hierna gaan we over tot de gekozen behandeling. Ik maak gebruik van natuurlijke olie eventueel aangevuld met natuurlijke etherische oliën. Jouw welbevinden, ontspanning, pijnwegneming staan centraal tijdens elke behandeling. Een Energetische behandeling, gesprek inbegrepen, duurt ca 2 uur in totaal.</p>
+            <p style="text-align: justify;">
+                Afspraken maken doe je best via de contactpagina, natuurlijk mag je mij ook telefonisch of via mail contacteren. Je bent welkom.</p>
+            <a class="button" href="Contact-pagina.html">Contact pagina</a>
+        </section>
+        -->
+    </article>
+    <footer w3-include-html="../Footer/Footer.html"></footer>
+  </body>
+</html>
+
+
+
+<script>
+    window.onload = Getuigenis;
+    
+    function Getuigenis(){
+        
+        
+        var getuigenissen = [];
+        getuigenissen.push({naam: "",text : "Als je lichaam zijn grenzen begint aan te geven, <br> vergeet dan niet te luisteren"});
+
+        var i = Math.floor(Math.random() * getuigenissen.length);
+        
+            
+        var p = document.createElement("p");
+        p.innerHTML = getuigenissen[i].naam;
+        p.id = "cursive";
+        document.getElementById("getuigenis").innerHTML = getuigenissen[i].text;
+        document.getElementById("getuigenis").appendChild(p);
+        
+        setTimeout(Getuigenis, 8000);
+        
+    }
+</script>
+
+
+<script w3-include-html="../Includers/HtmlIncluder/popup-javascriptinclude.html"></script>
+
+<script src="../Includers/JsIncluder/includehtml.js"></script>
+<script src="../Includers/JsIncluder/includenav.js"></script>
+
+ 
+

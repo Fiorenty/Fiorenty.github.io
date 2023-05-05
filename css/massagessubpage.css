@@ -1,0 +1,118 @@
+article {
+  margin-top: 85px;
+  background-color: #ffffff;
+  line-height: 1.42857;
+}
+
+.massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+article section {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 2%;
+}
+
+.massageimages {
+  height: 400px;
+  width: 400px;
+}
+
+section {
+  float: none;
+}
+
+section img {
+  float: left;
+  margin-right: 10px;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #940868;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: normal;
+  border: 0;
+  border-radius: 0;
+  background: #940868;
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* REIKI */
+.massagesectionhealy {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  display: flex;
+}
+
+.massagesectionhealy > div {
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 1500px) {
+  .massagesectionhealy {
+      margin-top: 25%;
+      margin-bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+  }
+
+  .massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  article section {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 5%;
+      margin-top: 5%;
+  }
+
+  .massagesection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}

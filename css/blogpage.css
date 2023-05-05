@@ -1,0 +1,80 @@
+.mainimage {
+  display: block;
+  margin: auto;
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+article {
+  margin-top: 120px;
+  background-color: #ffffff;
+  line-height: 1.42857;
+}
+
+.blog {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
+
+.blogitem {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blogitem h2 {
+  font-weight: bold;
+  color: #9e1072;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.blogitem p {
+  font-size: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  background:#fff;
+}
+
+.blogitem::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0.05;
+  background-image: url('../img/BlogPage/fiorenti-small-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.blogitem:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .mainimage {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .blogitem {
+    width: 100%;
+  }
+}
